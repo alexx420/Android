@@ -1,0 +1,37 @@
+<application>
+  <component name="DiffSettings">
+    <option name="PLACES_MAP">
+      <entry key="ChangesView">
+        <PlaceSettings />
+      </entry>
+      <entry key="CommitDialog">
+        <PlaceSettings />
+      </entry>
+      <entry key="Default">
+        <PlaceSettings />
+      </entry>
+    </option>
+  </component>
+  <component name="TextDiffSettings">
+    <option name="PLACES_MAP">
+      <entry key="ChangesView">
+        <PlaceSettings>
+          <option name="EXPAND_BY_DEFAULT" value="false" />
+        </PlaceSettings>
+      </entry>
+      <entry key="CommitDialog">
+        <PlaceSettings>
+          <option name="EXPAND_BY_DEFAULT" value="false" />
+        </PlaceSettings>
+      </entry>
+      <entry key="Default">
+        <PlaceSettings />
+      </entry>
+    </option>
+    <option name="SHARED_SETTINGS">
+      <SharedSettings>
+        <option name="MERGE_AUTO_APPLY_NON_CONFLICTED_CHANGES" value="true" />
+      </SharedSettings>
+    </option>
+  </component>
+</application>
