@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Android</string>
+    <string name="app_name">Fonacot</string>
 
-    <string name="dummy_button">Inicio</string>
-    <string name="dummy_content">Fonacot</string>
+    <string name="title_activity_cr_info1">Crédito</string>
+    <string name="title_activity_cr_info3">CrInfo3Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
