@@ -58,6 +58,7 @@
             app:srcCompat="@drawable/img_nino_der" />
 
         <ImageButton
+            android:id="@+id/btn_siguiente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
