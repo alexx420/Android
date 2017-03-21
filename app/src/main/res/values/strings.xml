@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Fonacot</string>
 
-    <string name="title_activity_cr_info1">Crédito</string>
-    <string name="title_activity_cr_info3">CrInfo3Activity</string>
+    <string name="label_seccion_credito">Crédito</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

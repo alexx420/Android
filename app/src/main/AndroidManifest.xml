@@ -23,7 +23,13 @@
         <activity
             android:name=".CrInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_cr_info1"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"></activity>
+
+        <activity
+            android:name=".CrInfo4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"></activity>
     </application>
 

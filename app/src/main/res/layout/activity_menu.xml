@@ -5,73 +5,40 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     tools:context="com.team.android.MenuActivity">
-    <!--TODO Menu principal de la aplicacion-->
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
+
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:keepScreenOn="true"
         android:text="@string/dummy_content"
         android:textColor="#33b5e5"
         android:textSize="50sp"
         android:textStyle="bold"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="8dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-
-
-    <LinearLayout
-        android:id="@+id/fullscreen_content_controls"
-        style="?metaButtonBarStyle"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/black_overlay"
-        android:orientation="horizontal"
-        tools:ignore="UselessParent"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/fullscreen_content"
-        app:layout_constraintTop_toBottomOf="@+id/fullscreen_content"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/fullscreen_content">
-
-        <Button
-            android:id="@+id/dummy_button"
-            style="?metaButtonBarButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/dummy_button" />
-
-    </LinearLayout>
-
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="112dp"
-        android:layout_height="102dp"
-        app:srcCompat="@mipmap/menucredito"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="126dp"
-        android:layout_marginTop="597dp" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/img_btn_menu_credito"
+        android:layout_width="112dp"
+        android:layout_height="102dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="597dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/menucredito"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageButton
+        android:id="@+id/img_btn_menu_presupuesto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="427dp"
@@ -83,28 +50,28 @@
         tools:layout_constraintTop_creator="1" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/img_btn_menu_interes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/menuintereses"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="793dp"
+        android:layout_marginTop="494dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="793dp"
-        android:layout_marginTop="494dp" />
+        app:srcCompat="@mipmap/menuintereses"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <ImageButton
-        android:id="@+id/ImageButton12"
+        android:id="@+id/img_btn_menu_sobre_endeudamiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/endeudamiento"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="1081dp"
+        android:layout_marginTop="597dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="1081dp"
-        android:layout_marginTop="597dp" />
+        app:srcCompat="@mipmap/endeudamiento"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -122,13 +89,13 @@
         android:id="@+id/Bienvenido"
         android:layout_width="253dp"
         android:layout_height="66dp"
+        android:layout_marginLeft="518dp"
+        android:layout_marginTop="202dp"
         android:text="Bienvenido"
         android:textSize="48sp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="518dp"
-        android:layout_marginTop="202dp" />
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
