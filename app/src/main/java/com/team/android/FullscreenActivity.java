@@ -36,6 +36,13 @@ public class FullscreenActivity extends AppCompatActivity {
         @SuppressLint("InlinedApi")
         @Override
         public void run() {
+
+            //TODO: TERMINAR EL SRPINT 1 ANDRES Y PERDO
+
+            //FIXME: ESTE CODIGO MANDA ERROR CUANDO SE MINIMIZA LA PANTALLA
+
+            //XXX: ESTE CODIGO FUNCIONA PERO SE TARDA
+
             // Delayed removal of status and navigation bar
 
             // Note that some of these constants are new as of API 16 (Jelly Bean)
