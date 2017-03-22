@@ -15,7 +15,7 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/menucredito"
+        app:srcCompat="@drawable/ic_menucredito"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="126dp" />
@@ -29,7 +29,7 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/menupresupuesto"
+        app:srcCompat="@drawable/ic_menupresupuesto"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="427dp" />
@@ -43,7 +43,7 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/menuintereses"
+        app:srcCompat="@drawable/ic_menuintereses"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="793dp" />
@@ -57,7 +57,7 @@
         android:background="@null"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/endeudamiento"
+        app:srcCompat="@drawable/ic_endeudamiento"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         android:layout_marginStart="1081dp" />
