@@ -49,14 +49,15 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            app:srcCompat="@drawable/img_cr_dialogo5" />
-
+            android:layout_weight="2"
+            app:srcCompat="@drawable/img_nino" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
-            app:srcCompat="@drawable/img_nino_der" />
+            android:layout_weight="4"
+            app:srcCompat="@drawable/img_cr_dialogo5" />
+
+
 
         <ImageButton
             android:id="@+id/btn_siguiente"

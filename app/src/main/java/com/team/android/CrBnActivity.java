@@ -1,22 +1,19 @@
 package com.team.android;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-/**
- * Created by administradorcito on 21/03/2017.
- */
-
-public class CrInfo4Activity extends AppCompatActivity {
+public class CrBnActivity extends AppCompatActivity {
     ImageButton siguiente;
     ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView( R.layout.activity_cr_bn );
 
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_menu);
@@ -24,21 +21,18 @@ public class CrInfo4Activity extends AppCompatActivity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO alexx420 agregar siguiente activity
+                Intent sgt = new Intent (CrBnActivity.this, CrInfo1Activity.class);
+                startActivity( sgt );
             }
         });
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                regresaInicio();
+                Intent hm = new Intent (CrBnActivity.this, MenuActivity.class);
+                startActivity( hm );
             }
         });
 
-    }
-
-    private void regresaInicio() {
-        Intent myIntent = new Intent(this, MenuActivity.class);
-        startActivity(myIntent);
     }
 }

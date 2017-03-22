@@ -10,7 +10,7 @@ import android.widget.ImageButton;
  * Created by administradorcito on 21/03/2017.
  */
 
-public class CrInfo4Activity extends AppCompatActivity {
+public class PrInfo2Activity extends AppCompatActivity {
     ImageButton siguiente;
     ImageButton home;
 
