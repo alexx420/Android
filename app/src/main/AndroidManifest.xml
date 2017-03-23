@@ -21,7 +21,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CrBnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme" />
+        <activity
             android:name=".CrInfo1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"/>
+        <activity
+            android:name=".CrInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"/>
@@ -30,8 +40,5 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"/>
-        <activity android:name=".CrBnActivity">
-        </activity>
     </application>
-
 </manifest>
