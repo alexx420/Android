@@ -26,7 +26,8 @@ public class CrJuegoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //TODO Agregar imagen del dado en 3d para el boton de tirar, una imagen con flechita que diga tirar y agregar efecto oscurecio de las casillas cuando no se encuentren activas
+        setContentView(R.layout.activity_cr_juego);
+
         meta = 22;
         pos = 0;
         ganador = false;
@@ -50,20 +51,27 @@ public class CrJuegoActivity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }
 
-    private void tiraDado() {
+    public void mensajeGanador() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrJuegoActivity.this);
+        alertDialog.setTitle("Felicidades");
+        alertDialog.setMessage("Has llegado a la meta!");
+        alertDialog.show();
+    }
+
+    public void tiraDado() {
+        //pregunta si es ganador
         if (ganador) {
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrJuegoActivity.this);
-            alertDialog.setTitle("Felicidades");
-            alertDialog.setMessage("Has llegado a la meta!");
-            alertDialog.show();
+            //si
+            // muestra mensaje
+            mensajeGanador();
         } else {
-
-
+            //no
+            // tira dado
             int valorDado = (int) Math.floor(Math.random() * 6 + 1);
             ImageView imgv_dado = (ImageView) findViewById(R.id.imageView_dado);
             switch (valorDado) {
@@ -86,21 +94,35 @@ public class CrJuegoActivity extends AppCompatActivity {
                     imgv_dado.setImageResource(R.drawable.img_cr_dado6);
                     break;
             }
-
+            int anterior = this.pos;
+            //pregunta si llega a la meta
             if (this.pos + valorDado == this.meta) {
+                //es ganador
                 this.ganador = true;
-            } else {
-                //opaca casilla del tiro anterior
-                int id_view = getId("imageViewC" + this.pos, R.id.class);
-                ImageView imgv_casilla = (ImageView) findViewById(id_view);
-                int id_drwbl = getId("img_cr_casilla" + this.pos + "_uf", R.drawable.class);
-                imgv_casilla.setImageResource(id_drwbl);
-                //activa casilla del tiro nuevo
                 this.pos += valorDado;
-                id_view = getId("imageViewC" + this.pos, R.id.class);
-                imgv_casilla = (ImageView) findViewById(id_view);
-                id_drwbl = getId("img_cr_casilla" + this.pos, R.drawable.class);
-                imgv_casilla.setImageResource(id_drwbl);
+            } else if (this.pos + valorDado > this.meta) {
+                //pregunta si se pasa
+                //no suma valor
+            } else {
+                this.pos += valorDado;
+            }
+            //pinta casillas
+            //opaca casilla del tiro anterior
+            int id_view = getId("imageViewC" + anterior, R.id.class);
+            ImageView imgv_casilla = (ImageView) findViewById(id_view);
+            int id_drwbl = getId("img_cr_casilla" + anterior + "_uf", R.drawable.class);
+            imgv_casilla.setImageResource(id_drwbl);
+
+            //activa casilla del tiro nuevo
+            id_view = getId("imageViewC" + this.pos, R.id.class);
+            imgv_casilla = (ImageView) findViewById(id_view);
+            id_drwbl = getId("img_cr_casilla" + this.pos, R.drawable.class);
+            imgv_casilla.setImageResource(id_drwbl);
+            //pregunta si es ganador
+            if (ganador) {
+                //si
+                // muestra mensaje
+                mensajeGanador();
             }
         }
     }
@@ -110,8 +132,9 @@ public class CrJuegoActivity extends AppCompatActivity {
             Field idField = c.getDeclaredField(resourceName);
             return idField.getInt(idField);
         } catch (Exception e) {
-            throw new RuntimeException("No resource ID found for: "
-                    + resourceName + " / " + c, e);
+            System.err.println("No resource ID found for: "
+                    + resourceName);
+            return -1;
         }
     }
 }
