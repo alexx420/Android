@@ -50,13 +50,13 @@
                 app:srcCompat="@drawable/img_cr_dialogo_juego" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageViewC0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageViewC8"
                 android:layout_marginEnd="24dp"
                 android:layout_toStartOf="@+id/imageViewC16"
-                app:srcCompat="@drawable/img_cr_salida" />
+                app:srcCompat="@drawable/img_cr_casilla0" />
 
             <ImageView
                 android:id="@+id/imageViewC1"
@@ -231,10 +231,10 @@
                 android:id="@+id/imageViewC22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView5"
+                android:layout_below="@+id/imageViewC0"
                 android:layout_marginStart="25dp"
                 android:layout_toEndOf="@+id/imageViewC15"
-                app:srcCompat="@drawable/img_cr_meta_uf" />
+                app:srcCompat="@drawable/img_cr_casilla22_uf" />
 
             <Button
                 android:id="@+id/btn_dado"
