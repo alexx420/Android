@@ -1,10 +1,12 @@
 package com.team.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -51,9 +53,13 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //TODO Abrir actividad presupuesto bienvenida
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MenuActivity.this);
-                alertDialog.setMessage("Abre activity Presupuesto Bienvenida");
-                alertDialog.show();
+//                AlertDialog.Builder alertDialog = new AlertDialog.Builder(MenuActivity.this);
+//                alertDialog.setMessage("Abre activity Presupuesto Bienvenida");
+//                alertDialog.show();
+
+                iniciaPresupuesto();
+
+
             }
         });
         menu_sobre_endeudamiento.setOnClickListener(new View.OnClickListener() {
@@ -68,5 +74,10 @@ public class MenuActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void iniciaPresupuesto() {
+        Intent myIntent = new Intent(this, CrJuegoActivity.class);
+        startActivity(myIntent);
     }
 }

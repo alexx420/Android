@@ -31,6 +31,12 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"></activity>
+
+        <activity
+            android:name=".CrJuegoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>
