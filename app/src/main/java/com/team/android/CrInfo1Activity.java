@@ -1,5 +1,6 @@
 package com.team.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -31,9 +32,14 @@ public class CrInfo1Activity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO alexx420 agregar home activity
+                regresaInicio();
             }
         });
 
+    }
+
+    private void regresaInicio() {
+        Intent myIntent = new Intent(this, MenuActivity.class);
+        startActivity(myIntent);
     }
 }
