@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Fonacot</string>
-    <string name="menu_welcome">Bienvenido al Circuito Crediticio</string>
-
+    <string name="menu_welcome">\nBienvenido \n Al espacio de diversion y aprendizaje\n</string>
     <string name="label_seccion_credito">Crédito</string>
+    <string name="logo">Logotipo</string>
+    <string name="nino">Imagen niño</string>
+    <string name="btn_credito">Botón de crédito</string>
+    <string name="btn_intereses">Botón menú intereses</string>
+    <string name="btn_presupuesto">Botón menú presupuesto</string>
+    <string name="btn_sobre_endeudamiento">Botón menú sobre endeudamiento</string>
+    <string name="texto">Burbuja</string>
+    <string name="btn">Botón</string>
 </resources>

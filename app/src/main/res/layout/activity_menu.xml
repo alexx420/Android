@@ -1,92 +1,141 @@
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="#ffffff"
-    tools:context="com.team.android.MenuActivity">
+    android:transitionGroup="true">
 
-    <ImageButton
-        android:id="@+id/img_btn_menu_credito"
-        android:layout_width="112dp"
-        android:layout_height="102dp"
-        android:layout_marginLeft="126dp"
-        android:layout_marginTop="497dp"
-        android:background="@null"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menucredito"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="126dp" />
 
-    <ImageButton
-        android:id="@+id/img_btn_menu_presupuesto"
+    <!--header-->
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="427dp"
-        android:layout_marginTop="394dp"
-        android:background="@null"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menupresupuesto"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="427dp" />
+        android:gravity="center">
 
-    <ImageButton
-        android:id="@+id/img_btn_menu_interes"
+        <ImageView
+            android:id="@+id/imageView_12"
+            android:contentDescription="@string/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_header_fonacot" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- just draw a red line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#007a33" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#ba0c2f" />
+    </TableRow>
+
+    <!-- content -->
+
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="793dp"
-        android:layout_marginTop="394dp"
-        android:background="@null"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_menuintereses"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="793dp" />
+        android:gravity="center" >
 
-    <ImageButton
-        android:id="@+id/img_btn_menu_sobre_endeudamiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="1081dp"
-        android:layout_marginTop="497dp"
-        android:background="@null"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_endeudamiento"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="1081dp" />
+        <TextView
+            android:id="@+id/CrBn201"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_welcome"
+            android:textAlignment="center"
+            android:textSize="55sp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="142dp"
-        android:layout_height="57dp"
-        android:layout_marginLeft="573dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_header_fonacot"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="573dp" />
+    </TableRow>
 
-    <TextView
-        android:id="@+id/Bienvenido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="518dp"
-        android:layout_marginTop="102dp"
-        android:text="@string/menu_welcome"
-        android:textSize="100sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="418dp" />
+    <TableLayout>
+        <TableRow
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:ignore="UselessParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="16">
 
-</android.support.constraint.ConstraintLayout>
+            <View android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView101"
+                android:contentDescription="@string/nino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/img_nino" />
+
+            <View android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_btn_menu_credito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/btn_credito"
+                android:background="@null"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_menucredito" />
+
+            <View android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_btn_menu_interes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/btn_intereses"
+                android:background="@null"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_menuintereses" />
+
+            <View android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_btn_menu_presupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/btn_presupuesto"
+                android:background="@null"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_menupresupuesto" />
+
+            <View android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/img_btn_menu_sobre_endeudamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/btn_sobre_endeudamiento"
+                android:background="@null"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_endeudamiento" />
+
+            <View android:layout_weight="1" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+</TableLayout>
