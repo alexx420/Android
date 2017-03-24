@@ -4,6 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ffffff"
+    android:orientation="horizontal"
     android:transitionGroup="true">
 
 
@@ -15,9 +16,9 @@
 
         <ImageView
             android:id="@+id/imageView_12"
-            android:contentDescription="@string/logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/logo"
             android:src="@drawable/img_header_fonacot" />
     </TableRow>
 
@@ -49,7 +50,7 @@
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center" >
+        android:gravity="center">
 
         <TextView
             android:id="@+id/CrBn201"
@@ -62,23 +63,23 @@
     </TableRow>
 
     <TableLayout>
-        <TableRow
-            xmlns:tools="http://schemas.android.com/tools"
-            tools:ignore="UselessParent"
+
+        <TableRow xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:weightSum="16">
+            android:weightSum="16"
+            tools:ignore="UselessParent">
 
             <View android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/imageView101"
-                android:contentDescription="@string/nino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:contentDescription="@string/nino"
                 app:srcCompat="@drawable/img_nino" />
 
             <View android:layout_weight="1" />
@@ -88,8 +89,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:contentDescription="@string/btn_credito"
                 android:background="@null"
+                android:contentDescription="@string/btn_credito"
                 android:gravity="center"
                 app:srcCompat="@drawable/ic_menucredito" />
 
@@ -100,8 +101,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:contentDescription="@string/btn_intereses"
                 android:background="@null"
+                android:contentDescription="@string/btn_intereses"
                 android:gravity="center"
                 app:srcCompat="@drawable/ic_menuintereses" />
 
@@ -112,8 +113,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:contentDescription="@string/btn_presupuesto"
                 android:background="@null"
+                android:contentDescription="@string/btn_presupuesto"
                 android:gravity="center"
                 app:srcCompat="@drawable/ic_menupresupuesto" />
 
@@ -124,8 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:contentDescription="@string/btn_sobre_endeudamiento"
                 android:background="@null"
+                android:contentDescription="@string/btn_sobre_endeudamiento"
                 android:gravity="center"
                 app:srcCompat="@drawable/ic_endeudamiento" />
 
@@ -134,8 +135,6 @@
         </TableRow>
 
     </TableLayout>
-
-
 
 
 </TableLayout>

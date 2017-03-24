@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="horizontal">
+    android:layout_height="fill_parent">
 
     <!--header-->
     <TableRow
@@ -16,7 +15,6 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription=""
             android:src="@drawable/img_header_fonacot"
             tools:ignore="ContentDescription" />
     </TableRow>
@@ -44,6 +42,7 @@
             android:background="#ba0c2f" />
     </TableRow>
     <!--content-->
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -72,11 +71,11 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:contentDescription="@string/texto"
-                app:srcCompat="@drawable/img_in_dialogo3" />
+                app:srcCompat="@drawable/img_pr_dialogo1"
+                tools:ignore="ContentDescription" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btn_siguiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -86,6 +85,18 @@
                 android:contentDescription=""
                 android:src="@drawable/ic_siguiente"
                 tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="casual"
+                android:text="@string/presupuesto"
+                android:textColor="#2498C4"
+                android:textSize="80sp"
+                tools:ignore="RelativeOverlap" />
         </RelativeLayout>
 
     </TableRow>
@@ -113,13 +124,11 @@
             android:background="#ba0c2f" />
     </TableRow>
 
-
     <!--footer-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center">
-
 
         <ImageButton
             android:id="@+id/btn_menu"
@@ -128,7 +137,6 @@
             android:background="@null"
             android:src="@drawable/ic_menu"
             tools:ignore="ContentDescription" />
+
     </TableRow>
 </TableLayout>
-
-

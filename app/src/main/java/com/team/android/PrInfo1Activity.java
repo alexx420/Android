@@ -10,14 +10,15 @@ import android.widget.ImageButton;
  * Created by alexx420 on 21/03/2017.
  */
 
-public class PrInfo8Activity extends AppCompatActivity {
+public class PrInfo1Activity extends AppCompatActivity {
+
     ImageButton siguiente;
     ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pr_info8);
+        setContentView(R.layout.activity_pr_info1);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_menu);
 
@@ -37,14 +38,13 @@ public class PrInfo8Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
-        Intent myIntent = new Intent(this, MenuActivity.class);
+    public void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, PrInfo2Activity.class);
         startActivity(myIntent);
     }
 
-    public void iniciaSiguiente() {
-        //TODO Descomentar
-//        Intent myIntent = new Intent(this, .class);
-//        startActivity(myIntent);
+    public void regresaInicio() {
+        Intent myIntent = new Intent(this, MenuActivity.class);
+        startActivity(myIntent);
     }
 }

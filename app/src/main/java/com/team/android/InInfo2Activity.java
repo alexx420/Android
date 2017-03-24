@@ -24,7 +24,7 @@ public class InInfo2Activity extends AppCompatActivity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO alexx420 agregar siguiente activity
+                iniciaSiguiente();
             }
         });
 
@@ -39,6 +39,10 @@ public class InInfo2Activity extends AppCompatActivity {
 
     private void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
+        startActivity(myIntent);
+    }
+    public void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, CrInfo3Activity.class);
         startActivity(myIntent);
     }
 }
