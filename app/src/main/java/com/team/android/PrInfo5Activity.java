@@ -37,7 +37,7 @@ public class PrInfo5Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }

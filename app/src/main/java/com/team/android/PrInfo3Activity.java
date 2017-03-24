@@ -37,14 +37,14 @@ public class PrInfo3Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }
 
     public void iniciaSiguiente() {
-        /*
-        Intent myIntent = new Intent(this, PrInfo3Activity.class);
-        startActivity(myIntent); */
+        //TODO Descomentar
+//        Intent myIntent = new Intent(this, PrInfo3Activity.class);
+//        startActivity(myIntent);
     }
 }

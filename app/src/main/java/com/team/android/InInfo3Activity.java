@@ -37,12 +37,13 @@ public class InInfo3Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }
-    public void iniciaSiguiente() {
 
+    public void iniciaSiguiente() {
+        //TODO Descomentar
         //Intent myIntent = new Intent(this, InInfo4Activity.class);
         //startActivity(myIntent);
     }

@@ -58,6 +58,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void iniciaEndeudamiento() {
+        //TODO Descomentar
 //        Intent myIntent = new Intent(this, SeBnActivity.class);
 //        startActivity(myIntent);
     }

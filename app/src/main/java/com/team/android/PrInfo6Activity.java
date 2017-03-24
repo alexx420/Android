@@ -37,13 +37,13 @@ public class PrInfo6Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }
 
     public void iniciaSiguiente() {
-        // Descomentar
+        //TODO Descomentar
 //        Intent myIntent = new Intent(this, PrInfo7Activity.class);
 //        startActivity(myIntent);
     }
