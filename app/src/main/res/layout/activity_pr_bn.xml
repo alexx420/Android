@@ -15,8 +15,8 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/img_header_fonacot" />
+            android:src="@drawable/img_header_fonacot"
+            tools:ignore="ContentDescription" />
     </TableRow>
     <!--div-->
     <TableRow
@@ -42,6 +42,7 @@
             android:background="#ba0c2f" />
     </TableRow>
     <!--content-->
+
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,8 +71,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:contentDescription="@string/texto"
-                app:srcCompat="@drawable/img_cr_dialogo2" />
+                app:srcCompat="@drawable/img_pr_dialogo1"
+                tools:ignore="ContentDescription" />
 
             <ImageButton
                 android:id="@+id/btn_siguiente"
@@ -84,6 +85,18 @@
                 android:contentDescription=""
                 android:src="@drawable/ic_siguiente"
                 tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="casual"
+                android:text="@string/presupuesto"
+                android:textColor="#2498C4"
+                android:textSize="80sp"
+                tools:ignore="RelativeOverlap" />
         </RelativeLayout>
 
     </TableRow>
@@ -111,21 +124,19 @@
             android:background="#ba0c2f" />
     </TableRow>
 
-
     <!--footer-->
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center">
 
-
         <ImageButton
             android:id="@+id/btn_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:contentDescription="@string/btn"
-            android:src="@drawable/ic_menu" />
+            android:src="@drawable/ic_menu"
+            tools:ignore="ContentDescription" />
+
     </TableRow>
 </TableLayout>
-

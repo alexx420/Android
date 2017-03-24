@@ -30,18 +30,31 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"></activity>
-
+        <activity
+            android:name=".CrInfo2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
-            android:theme="@style/FullscreenTheme"/>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".CrInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/label_seccion_credito"
             android:theme="@style/FullscreenTheme"></activity>
-
+        <activity
+            android:name=".CrInfo5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".CrInstJuegoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_seccion_credito"
+            android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

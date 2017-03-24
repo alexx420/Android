@@ -11,4 +11,6 @@
     <string name="texto">Burbuja</string>
     <string name="btn">Botón</string>
     <string name="juguemos">¡Juguemos!</string>
+    <string name="credito">Crédito</string>
+    <string name="presupuesto">Presupuesto</string>
 </resources>
