@@ -10,21 +10,21 @@ import android.widget.ImageButton;
  * Created by alexx420 on 21/03/2017.
  */
 
-public class PrInfo5Activity extends AppCompatActivity {
+public class CrInstJuegoActivity extends AppCompatActivity {
     ImageButton siguiente;
     ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pr_info5);
+        setContentView(R.layout.activity_cr_inst_juego);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_menu);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO alexx420 agregar siguiente activity
+                iniciaSiguiente();
             }
         });
 
@@ -37,7 +37,12 @@ public class PrInfo5Activity extends AppCompatActivity {
 
     }
 
-    private void regresaInicio() {
+    public void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, CrJuegoActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }

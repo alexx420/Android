@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import java.lang.reflect.Field;
 
 /**
- * Created by administradorcito on 21/03/2017.
+ * Created by alexx420 on 21/03/2017.
  */
 
 public class CrJuegoActivity extends AppCompatActivity {

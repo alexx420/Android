@@ -12,8 +12,8 @@ public class CrInfo3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_cr_info3 );
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cr_info3);
 
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_menu);
@@ -21,17 +21,25 @@ public class CrInfo3Activity extends AppCompatActivity {
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sgt = new Intent (CrInfo3Activity.this, CrInfo4Activity.class);
-                startActivity( sgt );
+                iniciaSiguiente();
             }
         });
 
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent hm = new Intent (CrInfo3Activity.this, MenuActivity.class);
-                startActivity( hm );
+                regresaInicio();
             }
         });
+    }
+
+    public void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, CrInfo4Activity.class);
+        startActivity(myIntent);
+    }
+
+    public void regresaInicio() {
+        Intent myIntent = new Intent(this, MenuActivity.class);
+        startActivity(myIntent);
     }
 }

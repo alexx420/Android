@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 /**
- * Created by administradorcito on 21/03/2017.
+ * Created by alexx420 on 21/03/2017.
  */
 
 public class InInfo5Activity extends AppCompatActivity {
@@ -17,7 +17,7 @@ public class InInfo5Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_in_info5);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_menu);
 
