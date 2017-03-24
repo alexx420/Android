@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal"
+    tools:context="com.team.android.CrInfo3Activity">
+
+    <!--header-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:src="@drawable/img_header_fonacot"
+            tools:ignore="ContentDescription" />
+    </TableRow>
+    <!--div-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- just draw a red line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#007a33" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dip"
+            android:layout_weight="1"
+            android:background="#ba0c2f" />
+
+    </TableRow>
+    <!--content-->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="131dp"
+                app:srcCompat="@drawable/img_nino"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription=""
+                app:srcCompat="@drawable/img_pr_instrucciones"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:id="@+id/btn_siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="111dp"
+                android:background="@null"
+                android:contentDescription=""
+                android:src="@drawable/ic_siguiente"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="casual"
+                android:text="@string/juguemos"
+                android:textColor="#2498C4"
+                android:textSize="80sp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+    </TableRow>
+    <!--div-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- just draw a red line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:background="#007a33" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dip"
+            android:layout_weight="1"
+            android:background="#ba0c2f" />
+    </TableRow>
+
+
+    <!--footer-->
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription=""
+            android:src="@drawable/ic_menu"
+            tools:ignore="ContentDescription" />
+    </TableRow>
+</TableLayout>

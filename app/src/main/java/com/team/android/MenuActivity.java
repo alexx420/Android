@@ -48,8 +48,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void iniciaPresupuesto() {
-//        Intent myIntent = new Intent(this, PrBnActivity.class);
-//        startActivity(myIntent);
+        Intent myIntent = new Intent(this, PrBnActivity.class);
+        startActivity(myIntent);
     }
 
     public void iniciaCredito() {
@@ -63,7 +63,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void iniciaInteres() {
-//        Intent myIntent = new Intent(this, InBnActivity.class);
-//        startActivity(myIntent);
+        Intent myIntent = new Intent(this, InBnActivity.class);
+        startActivity(myIntent);
     }
 }

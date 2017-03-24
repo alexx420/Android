@@ -42,7 +42,7 @@ public class InInfo2Activity extends AppCompatActivity {
         startActivity(myIntent);
     }
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, CrInfo3Activity.class);
+        Intent myIntent = new Intent(this, InInfo3Activity.class);
         startActivity(myIntent);
     }
 }
