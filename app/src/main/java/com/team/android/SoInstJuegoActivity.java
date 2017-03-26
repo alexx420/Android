@@ -17,7 +17,7 @@ public class SoInstJuegoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_in_inst_juego);
+        setContentView(R.layout.activity_so_inst_juego);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_home);
 

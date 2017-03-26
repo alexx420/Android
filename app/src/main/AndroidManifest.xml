@@ -65,37 +65,37 @@
         <activity
             android:name=".InBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".InInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".InInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/interes"
+            android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
         <!--Presupuesto-->
         <activity

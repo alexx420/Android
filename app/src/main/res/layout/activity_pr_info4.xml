@@ -31,7 +31,7 @@
         android:layout_width="528dp"
         android:layout_height="231dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_dialogo_1"
+        app:srcCompat="@drawable/img_pr_dialogo5"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         tools:ignore="ContentDescription" />
@@ -98,7 +98,7 @@
         android:layout_alignParentEnd="true"
         android:background="@null"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_icono"
+        app:srcCompat="@drawable/img_pr_icono"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -115,7 +115,7 @@
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_cr_credito"
+        app:srcCompat="@drawable/img_pr_titulo2"
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
         tools:ignore="ContentDescription" />
