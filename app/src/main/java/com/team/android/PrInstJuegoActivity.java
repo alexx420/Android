@@ -38,7 +38,7 @@ public class PrInstJuegoActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, PrInfo8Activity.class);
+        Intent myIntent = new Intent(this, PrJuego3Activity.class);
         startActivity(myIntent);
     }
 

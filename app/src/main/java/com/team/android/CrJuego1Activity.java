@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -15,7 +15,7 @@ import java.lang.reflect.Field;
  * Created by alexx420 on 21/03/2017.
  */
 
-public class CrJuegoActivity extends AppCompatActivity {
+public class CrJuego1Activity extends AppCompatActivity {
     ImageButton dado;
     ImageButton home;
     private int meta = 22;
@@ -26,7 +26,7 @@ public class CrJuegoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cr_juego);
+        setContentView(R.layout.activity_cr_juego1);
 
         meta = 22;
         pos = 0;
@@ -38,7 +38,11 @@ public class CrJuegoActivity extends AppCompatActivity {
         dado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tiraDado();
+                try {
+                    tiraDado();
+                } catch (Exception e) {
+                    Log.e(this.toString(), e.getMessage());
+                }
             }
         });
 
@@ -57,13 +61,13 @@ public class CrJuegoActivity extends AppCompatActivity {
     }
 
     public void mensajeGanador() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrJuegoActivity.this);
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrJuego1Activity.this);
         alertDialog.setTitle("Felicidades");
         alertDialog.setMessage("Has llegado a la meta!");
         alertDialog.show();
     }
 
-    public void tiraDado() {
+    public void tiraDado() throws NoSuchFieldException, IllegalAccessException {
         //pregunta si es ganador
         if (ganador) {
             //si
@@ -127,14 +131,8 @@ public class CrJuegoActivity extends AppCompatActivity {
         }
     }
 
-    public static int getId(String resourceName, Class<?> c) {
-        try {
-            Field idField = c.getDeclaredField(resourceName);
-            return idField.getInt(idField);
-        } catch (Exception e) {
-            System.err.println("No resource ID found for: "
-                    + resourceName);
-            return -1;
-        }
+    public static int getId(String resourceName, Class<?> c) throws IllegalAccessException, NoSuchFieldException {
+        Field idField = c.getDeclaredField(resourceName);
+        return idField.getInt(idField);
     }
 }

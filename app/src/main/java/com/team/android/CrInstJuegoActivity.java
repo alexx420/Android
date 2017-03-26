@@ -38,7 +38,7 @@ public class CrInstJuegoActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, CrJuegoActivity.class);
+        Intent myIntent = new Intent(this, CrJuego1Activity.class);
         startActivity(myIntent);
     }
 
