@@ -43,7 +43,7 @@ public class PrInfo4Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, PrInfo4Activity.class);
+        Intent myIntent = new Intent(this, PrInfo5Activity.class);
         startActivity(myIntent);
     }
 }

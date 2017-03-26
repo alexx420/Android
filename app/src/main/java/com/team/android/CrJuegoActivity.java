@@ -16,7 +16,7 @@ import java.lang.reflect.Field;
  */
 
 public class CrJuegoActivity extends AppCompatActivity {
-    Button dado;
+    ImageButton dado;
     ImageButton home;
     private int meta = 22;
     private int pos = 0;
@@ -32,7 +32,7 @@ public class CrJuegoActivity extends AppCompatActivity {
         pos = 0;
         ganador = false;
 
-        dado = (Button) findViewById(R.id.btn_dado);
+        dado = (ImageButton) findViewById(R.id.btn_dado);
         home = (ImageButton) findViewById(R.id.btn_home);
 
         dado.setOnClickListener(new View.OnClickListener() {

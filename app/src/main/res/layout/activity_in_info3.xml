@@ -63,7 +63,7 @@
         android:layout_height="75dp"
         android:layout_above="@+id/imageView15"
         android:layout_centerHorizontal="true"
-        android:background="null"
+        android:background="@null"
         android:scaleType="fitXY"
         android:src="@drawable/btn_home"
         tools:ignore="ContentDescription" />
@@ -96,7 +96,7 @@
         android:layout_height="75dp"
         android:layout_above="@+id/imageView14"
         android:layout_alignParentEnd="true"
-        android:background="null"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_in_icono"
         tools:ignore="ContentDescription" />

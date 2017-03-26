@@ -6,16 +6,16 @@
     android:layout_height="fill_parent"
     android:background="@drawable/img_fondo">
 
-    <!--header-->
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="107dp"
-        android:layout_height="132dp"
-        android:layout_above="@+id/imageView8"
-        android:layout_alignEnd="@+id/imageView8"
+    <ImageButton
+        android:id="@+id/btn_in_intereses"
+        android:layout_width="139dp"
+        android:layout_height="171dp"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_in_intereses"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView8"
+        android:layout_toStartOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -108,35 +108,38 @@
         app:srcCompat="@drawable/img_cr_nina"
         tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="107dp"
-        android:layout_height="132dp"
+    <ImageButton
+        android:id="@+id/btn_cr_credito"
+        android:layout_width="139dp"
+        android:layout_height="171dp"
+        android:layout_alignTop="@+id/btn_pr_presupuesto"
+        android:layout_marginTop="58dp"
+        android:layout_toStartOf="@+id/imageView2"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_cr_credito"
-        android:layout_marginTop="58dp"
-        android:layout_alignTop="@+id/imageView20"
-        android:layout_toStartOf="@+id/imageView2"
         tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="107dp"
-        android:layout_height="132dp"
+    <ImageButton
+        android:id="@+id/btn_so_endeudamiento"
+        android:layout_width="139dp"
+        android:layout_height="171dp"
+        android:layout_alignTop="@+id/btn_cr_credito"
+        android:layout_toEndOf="@+id/imageView2"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_so_endeudamiento"
-        android:layout_alignTop="@+id/imageView19"
-        android:layout_toEndOf="@+id/imageView2"
         tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="107dp"
-        android:layout_height="132dp"
-        android:layout_above="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/btn_pr_presupuesto"
+        android:layout_width="139dp"
+        android:layout_height="171dp"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_pr_presupuesto"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView12" />
 
 </RelativeLayout>

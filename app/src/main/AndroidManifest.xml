@@ -20,45 +20,174 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--Credito-->
         <activity
             android:name=".CrBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".CrInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".CrInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/label_seccion_credito"
+            android:label="@string/credito"
+            android:theme="@style/FullscreenTheme"></activity>
+        <!--Intereses-->
+        <activity
+            android:name=".InBnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".InInfo1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".InInfo2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".InInfo3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".InInfo4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".InInfo5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".InInstJuegoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/interes"
+            android:theme="@style/FullscreenTheme"></activity>
+        <!--Presupuesto-->
+        <activity
+            android:name=".PrBnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".PrInfo1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".PrInfo4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo6Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo7Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInfo8Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrInstJuegoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme"></activity>
+        <!--Sobre endeudamiento-->
+        <activity
+            android:name=".SoBnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".SoInfo1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoInfo2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoInfo3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".SoInfo4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoInfo5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoInfo6Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoInstJuegoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
             android:theme="@style/FullscreenTheme"></activity>
     </application>
 </manifest>

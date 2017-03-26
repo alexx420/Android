@@ -42,7 +42,7 @@ public class InInfo5Activity extends AppCompatActivity {
         startActivity(myIntent);
     }
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, CrInstJuegoActivity.class);
+        Intent myIntent = new Intent(this, InInstJuegoActivity.class);
         startActivity(myIntent);
     }
 }

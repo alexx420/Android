@@ -13,7 +13,7 @@ public class SoBnActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_se_bn);
+        setContentView(R.layout.activity_so_bn);
 
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
         home = (ImageButton) findViewById(R.id.btn_home);
@@ -35,7 +35,7 @@ public class SoBnActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, InInfo2Activity.class);
+        Intent myIntent = new Intent(this, InInfo1Activity.class);
         startActivity(myIntent);
     }
 

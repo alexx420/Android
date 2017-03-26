@@ -35,7 +35,7 @@ public class InBnActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, InInfo2Activity.class);
+        Intent myIntent = new Intent(this, InInfo1Activity.class);
         startActivity(myIntent);
     }
 

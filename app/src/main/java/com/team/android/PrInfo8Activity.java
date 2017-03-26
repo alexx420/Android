@@ -43,8 +43,7 @@ public class PrInfo8Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        //TODO Descomentar
-//        Intent myIntent = new Intent(this, .class);
-//        startActivity(myIntent);
+        Intent myIntent = new Intent(this, PrInstJuegoActivity.class);
+        startActivity(myIntent);
     }
 }

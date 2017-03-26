@@ -53,7 +53,7 @@
         android:layout_height="75dp"
         android:layout_above="@+id/imageView15"
         android:layout_centerHorizontal="true"
-        android:background="null"
+        android:background="@null"
         android:scaleType="fitXY"
         android:src="@drawable/btn_home"
         tools:ignore="ContentDescription" />
@@ -63,7 +63,7 @@
         android:layout_width="167dp"
         android:layout_height="300dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_nina"
+        app:srcCompat="@drawable/img_nino"
         tools:ignore="ContentDescription"
         android:layout_marginStart="72dp"
         android:layout_below="@+id/imageViewC9"
@@ -86,9 +86,9 @@
         android:layout_height="75dp"
         android:layout_above="@+id/imageView14"
         android:layout_alignParentEnd="true"
-        android:background="null"
+        android:background="@null"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_cr_icono"
+        app:srcCompat="@drawable/img_cr_icono"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -117,7 +117,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla1_uf"
+        app:srcCompat="@drawable/img_cr_casilla5_uf"
         android:layout_below="@+id/imageViewC0"
         android:layout_alignEnd="@+id/btn_home"
         tools:ignore="ContentDescription" />
@@ -129,7 +129,7 @@
         android:scaleType="fitXY"
         android:layout_below="@+id/imageViewC1"
         android:layout_alignEnd="@+id/btn_home"
-        app:srcCompat="@drawable/img_cr_casilla2_uf"
+        app:srcCompat="@drawable/img_cr_casilla5_uf"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -137,7 +137,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla3_uf"
+        app:srcCompat="@drawable/img_cr_casilla5_uf"
         android:layout_below="@+id/imageViewC1"
         android:layout_toStartOf="@+id/imageViewC2"
         tools:ignore="ContentDescription" />
@@ -147,7 +147,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla4_uf"
+        app:srcCompat="@drawable/img_cr_casilla5_uf"
         android:layout_alignTop="@+id/imageViewC3"
         android:layout_toStartOf="@+id/imageViewC3"
         tools:ignore="ContentDescription" />
@@ -338,7 +338,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="null"
+        android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_cr_dado"
         android:layout_above="@+id/imageView18"
