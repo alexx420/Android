@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_fondo">
+
+    <!--header-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView12"
+        app:srcCompat="@drawable/img_pleca_verde"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/img_pleca_roja"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fonacot"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView15"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_home"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_nino"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView12"
+        android:layout_marginStart="92dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_nino"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_verde"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView14"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_pr_icono"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView15"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_roja"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@+id/imageView12"
+        android:layout_toEndOf="@+id/imageView5"
+        app:srcCompat="@drawable/img_pr_jdialogo1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignTop="@+id/imageView13"
+        android:layout_toEndOf="@+id/imageView13"
+        app:srcCompat="@drawable/img_pr_jdialogo2"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton_o3"
+        android:layout_alignTop="@+id/imageButton_o5"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla6_uf"
+        app:srcCompat="@drawable/img_pr_casilla6_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/imageButton_o6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla3_uf"
+        app:srcCompat="@drawable/img_pr_casilla3_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_marginEnd="60dp"
+        android:layout_toStartOf="@+id/imageButton_o6"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla2_uf"
+        app:srcCompat="@drawable/img_pr_casilla2_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton_o2"
+        android:layout_below="@+id/imageButton_o2"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla5_uf"
+        app:srcCompat="@drawable/img_pr_casilla5_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton_o1"
+        android:layout_below="@+id/imageButton_o1"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla4_uf"
+        app:srcCompat="@drawable/img_pr_casilla4_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButton_o8"
+        android:layout_toStartOf="@+id/imageView16"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_pr_casilla1_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o9"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButton_o8"
+        android:layout_toStartOf="@+id/imageView16"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla9_uf"
+        app:srcCompat="@drawable/img_pr_casilla9_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_marginStart="55dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla8_uf"
+        app:srcCompat="@drawable/img_pr_casilla8_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButton_o1"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_pr_casilla1_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton8"
+        android:layout_alignTop="@+id/imageButton8"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla7_uf"
+        app:srcCompat="@drawable/img_pr_casilla7_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="29dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla1_uf"
+        app:srcCompat="@drawable/img_pr_casilla1_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_below="@+id/imageButton4"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla12_uf"
+        app:srcCompat="@drawable/img_pr_casilla12_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o11"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton_o8"
+        android:layout_below="@+id/imageButton_o8"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla11_uf"
+        app:srcCompat="@drawable/img_pr_casilla11_uf"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton_o10"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/imageButton8"
+        android:layout_below="@+id/imageButton8"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:tag="img_pr_casilla10_uf"
+        app:srcCompat="@drawable/img_pr_casilla10_uf"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

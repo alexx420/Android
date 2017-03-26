@@ -38,7 +38,7 @@ public class InInstJuegoActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, InInfo5Activity.class);
+        Intent myIntent = new Intent(this, InJuego2Activity.class);
         startActivity(myIntent);
     }
 

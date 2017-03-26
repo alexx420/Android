@@ -117,7 +117,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla5_uf"
+        app:srcCompat="@drawable/img_cr_casilla1_uf"
         android:layout_below="@+id/imageViewC0"
         android:layout_alignEnd="@+id/btn_home"
         tools:ignore="ContentDescription" />
@@ -129,7 +129,7 @@
         android:scaleType="fitXY"
         android:layout_below="@+id/imageViewC1"
         android:layout_alignEnd="@+id/btn_home"
-        app:srcCompat="@drawable/img_cr_casilla5_uf"
+        app:srcCompat="@drawable/img_cr_casilla2_uf"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -137,7 +137,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla5_uf"
+        app:srcCompat="@drawable/img_cr_casilla3_uf"
         android:layout_below="@+id/imageViewC1"
         android:layout_toStartOf="@+id/imageViewC2"
         tools:ignore="ContentDescription" />
@@ -147,7 +147,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_casilla5_uf"
+        app:srcCompat="@drawable/img_cr_casilla4_uf"
         android:layout_alignTop="@+id/imageViewC3"
         android:layout_toStartOf="@+id/imageViewC3"
         tools:ignore="ContentDescription" />

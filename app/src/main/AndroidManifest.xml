@@ -57,7 +57,7 @@
             android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
-            android:name=".CrJuegoActivity"
+            android:name=".CrJuego1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
@@ -97,6 +97,18 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
             android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".InJuego2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/intereses"
+            android:theme="@style/FullscreenTheme">
+
+            <!--XXX Permite ejecutar una actividad directamente con Run -->
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--Presupuesto-->
         <activity
             android:name=".PrBnActivity"
@@ -148,6 +160,18 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
             android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".PrJuego3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme">
+
+            <!--XXX Permite ejecutar una actividad directamente con Run -->
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--Sobre endeudamiento-->
         <activity
             android:name=".SoBnActivity"
