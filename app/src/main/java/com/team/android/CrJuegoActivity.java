@@ -33,7 +33,7 @@ public class CrJuegoActivity extends AppCompatActivity {
         ganador = false;
 
         dado = (Button) findViewById(R.id.btn_dado);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         dado.setOnClickListener(new View.OnClickListener() {
             @Override

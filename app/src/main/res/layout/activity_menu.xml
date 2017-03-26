@@ -1,140 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff"
-    android:orientation="horizontal"
-    android:transitionGroup="true">
-
+    android:background="@drawable/img_fondo">
 
     <!--header-->
-    <TableRow
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="107dp"
+        android:layout_height="132dp"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_in_intereses"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView12"
+        app:srcCompat="@drawable/img_pleca_verde"
+        tools:ignore="ContentDescription" />
 
-        <ImageView
-            android:id="@+id/imageView_12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/img_header_fonacot" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <!-- just draw a red line -->
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#007a33" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#ffffff" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#ba0c2f" />
-    </TableRow>
-
-    <!-- content -->
-
-    <TableRow
+    <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/img_pleca_roja"
+        tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/CrBn201"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/menu_welcome"
-            android:textAlignment="center"
-            android:textSize="55sp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fonacot"
+        tools:ignore="ContentDescription" />
 
-    </TableRow>
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_verde"
+        tools:ignore="ContentDescription" />
 
-    <TableLayout>
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView15"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_roja"
+        tools:ignore="ContentDescription" />
 
-        <TableRow xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:weightSum="16"
-            tools:ignore="UselessParent">
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="255dp"
+        android:layout_height="74dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_bienvenido"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 
-            <View android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="517dp"
+        android:layout_height="74dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageView17"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/img_financiera"
+        tools:ignore="ContentDescription" />
 
-            <ImageView
-                android:id="@+id/imageView101"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:contentDescription="@string/nino"
-                app:srcCompat="@drawable/img_nino" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="133dp"
+        android:layout_height="155dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_cr_nino"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView12"
+        android:layout_marginStart="48dp"
+        tools:ignore="ContentDescription" />
 
-            <View android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_above="@+id/imageView14"
+        android:layout_toEndOf="@+id/imageView3"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_cr_nina"
+        tools:ignore="ContentDescription" />
 
-            <ImageButton
-                android:id="@+id/img_btn_menu_credito"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@null"
-                android:contentDescription="@string/btn_credito"
-                android:gravity="center"
-                app:srcCompat="@drawable/ic_menucredito" />
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="107dp"
+        android:layout_height="132dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_cr_credito"
+        android:layout_marginTop="58dp"
+        android:layout_alignTop="@+id/imageView20"
+        android:layout_toStartOf="@+id/imageView2"
+        tools:ignore="ContentDescription" />
 
-            <View android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="107dp"
+        android:layout_height="132dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_so_endeudamiento"
+        android:layout_alignTop="@+id/imageView19"
+        android:layout_toEndOf="@+id/imageView2"
+        tools:ignore="ContentDescription" />
 
-            <ImageButton
-                android:id="@+id/img_btn_menu_interes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@null"
-                android:contentDescription="@string/btn_intereses"
-                android:gravity="center"
-                app:srcCompat="@drawable/ic_menuintereses" />
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="107dp"
+        android:layout_height="132dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_pr_presupuesto"
+        tools:ignore="ContentDescription" />
 
-            <View android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@+id/img_btn_menu_presupuesto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@null"
-                android:contentDescription="@string/btn_presupuesto"
-                android:gravity="center"
-                app:srcCompat="@drawable/ic_menupresupuesto" />
-
-            <View android:layout_weight="1" />
-
-            <ImageButton
-                android:id="@+id/img_btn_menu_sobre_endeudamiento"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@null"
-                android:contentDescription="@string/btn_sobre_endeudamiento"
-                android:gravity="center"
-                app:srcCompat="@drawable/ic_endeudamiento" />
-
-            <View android:layout_weight="1" />
-
-        </TableRow>
-
-    </TableLayout>
-
-
-</TableLayout>
+</RelativeLayout>

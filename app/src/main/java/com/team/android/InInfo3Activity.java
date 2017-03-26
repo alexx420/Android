@@ -19,7 +19,7 @@ public class InInfo3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_info3);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +43,7 @@ public class InInfo3Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        //TODO Descomentar
-        //Intent myIntent = new Intent(this, InInfo4Activity.class);
-        //startActivity(myIntent);
+        Intent myIntent = new Intent(this, InInfo4Activity.class);
+        startActivity(myIntent);
     }
 }

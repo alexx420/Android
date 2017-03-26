@@ -19,7 +19,7 @@ public class CrInfo5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cr_info5);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override

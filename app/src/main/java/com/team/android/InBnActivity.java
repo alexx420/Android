@@ -16,7 +16,7 @@ public class InBnActivity extends AppCompatActivity {
         setContentView(R.layout.activity_in_bn);
 
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override

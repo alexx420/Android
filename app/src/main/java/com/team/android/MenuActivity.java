@@ -17,10 +17,10 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        menu_credito = (ImageButton) findViewById(R.id.img_btn_menu_credito);
-        menu_interes = (ImageButton) findViewById(R.id.img_btn_menu_interes);
-        menu_presupuesto = (ImageButton) findViewById(R.id.img_btn_menu_presupuesto);
-        menu_sobre_endeudamiento = (ImageButton) findViewById(R.id.img_btn_menu_sobre_endeudamiento);
+        menu_credito = (ImageButton) findViewById(R.id.img_btn_home_credito);
+        menu_interes = (ImageButton) findViewById(R.id.img_btn_home_interes);
+        menu_presupuesto = (ImageButton) findViewById(R.id.img_btn_home_presupuesto);
+        menu_sobre_endeudamiento = (ImageButton) findViewById(R.id.img_btn_home_sobre_endeudamiento);
         menu_credito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,9 +58,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void iniciaEndeudamiento() {
-        //TODO Descomentar
-//        Intent myIntent = new Intent(this, SeBnActivity.class);
-//        startActivity(myIntent);
+        Intent myIntent = new Intent(this, SoBnActivity.class);
+        startActivity(myIntent);
     }
 
     public void iniciaInteres() {

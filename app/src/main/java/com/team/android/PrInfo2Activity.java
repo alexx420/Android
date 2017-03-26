@@ -19,7 +19,7 @@ public class PrInfo2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pr_info2);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -19,7 +19,7 @@ public class PrInfo6Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pr_info6);
         siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_menu);
+        home = (ImageButton) findViewById(R.id.btn_home);
 
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,8 +43,7 @@ public class PrInfo6Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        //TODO Descomentar
-//        Intent myIntent = new Intent(this, PrInfo7Activity.class);
-//        startActivity(myIntent);
+        Intent myIntent = new Intent(this, PrInfo7Activity.class);
+        startActivity(myIntent);
     }
 }

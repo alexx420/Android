@@ -1,131 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_fondo">
 
     <!--header-->
-    <TableRow
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView12"
+        app:srcCompat="@drawable/img_pleca_verde"
+        tools:ignore="ContentDescription" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/img_header_fonacot" />
-    </TableRow>
-    <!--div-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <!-- just draw a red line -->
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#007a33" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#ffffff" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="5dip"
-            android:layout_weight="1"
-            android:background="#ba0c2f" />
-    </TableRow>
-    <!--content-->
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            tools:ignore="UselessParent">
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="131dp"
-                app:srcCompat="@drawable/img_nino"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:contentDescription="@string/texto"
-                app:srcCompat="@drawable/img_cr_dialogo3" />
-
-            <ImageButton
-                android:id="@+id/btn_siguiente"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="111dp"
-                android:background="@null"
-                android:contentDescription=""
-                android:src="@drawable/ic_siguiente"
-                tools:ignore="ContentDescription" />
-        </RelativeLayout>
-
-    </TableRow>
-    <!--div-->
-    <TableRow
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <!-- just draw a red line -->
-        <View
-            android:layout_width="0dp"
-            android:layout_height="2dip"
-            android:layout_weight="1"
-            android:background="#007a33" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="2dip"
-            android:layout_weight="1"
-            android:background="#ffffff" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="2dip"
-            android:layout_weight="1"
-            android:background="#ba0c2f" />
-    </TableRow>
-
-
-    <!--footer-->
-    <TableRow
+    <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        app:srcCompat="@drawable/img_pleca_roja"
+        tools:ignore="ContentDescription"
+        android:layout_marginBottom="45dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true" />
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="528dp"
+        android:layout_height="231dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_cr_dialogo_2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
 
-        <ImageButton
-            android:id="@+id/btn_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/btn"
-            android:src="@drawable/ic_menu" />
-    </TableRow>
-</TableLayout>
+    <ImageButton
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_siguiente"
+        tools:ignore="ContentDescription" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_fonacot"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView15"
+        android:layout_centerHorizontal="true"
+        android:background="null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_home"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="167dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_nina"
+        tools:ignore="ContentDescription"
+        android:layout_marginEnd="59dp"
+        android:layout_above="@+id/btn_home"
+        android:layout_toStartOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_verde"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView14"
+        android:layout_alignParentEnd="true"
+        android:background="null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btn_cr_icono"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="550dp"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_roja"
+        android:layout_alignTop="@+id/imageView15"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_cr_credito"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
