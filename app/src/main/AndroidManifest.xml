@@ -60,7 +60,13 @@
             android:name=".CrJuego1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme">
+            <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--Intereses-->
         <activity
             android:name=".InBnActivity"
