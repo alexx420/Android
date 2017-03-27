@@ -166,7 +166,19 @@
             android:label="@string/presupuesto"
             android:theme="@style/FullscreenTheme">
 
-            <!--XXX Permite ejecutar una actividad directamente con Run -->
+            <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PrJuego4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/presupuesto"
+            android:theme="@style/FullscreenTheme">
+
+            <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
             <intent-filter>
                 <action android:name="android.intent.action.CALL" />
                 <category android:name="android.intent.category.DEFAULT" />

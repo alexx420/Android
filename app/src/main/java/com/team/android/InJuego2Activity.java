@@ -31,7 +31,7 @@ public class InJuego2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_juego2);
         //respuestas colores
-        imageview_azul = (ImageView) findViewById(R.id.imageView_azul);
+        imageview_azul = (ImageView) findViewById(R.id.imageView_c7);
         imageview_naranja = (ImageView) findViewById(R.id.imageView_naranja);
         imageview_verde = (ImageView) findViewById(R.id.imageView_verde);
         imageview_morado = (ImageView) findViewById(R.id.imageView_morado);
@@ -43,7 +43,7 @@ public class InJuego2Activity extends AppCompatActivity {
         imageview_morado.setOnLongClickListener(listenClick);
 
         //set listeners on drag
-        findViewById(R.id.imageView_p1).setOnDragListener(listenDrag);
+        findViewById(R.id.imageView_p12).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p2).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p3).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p4).setOnDragListener(listenDrag);
