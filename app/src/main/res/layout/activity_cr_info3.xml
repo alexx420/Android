@@ -31,7 +31,7 @@
         android:layout_width="528dp"
         android:layout_height="231dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_dialogo_3"
+        app:srcCompat="@drawable/img_cr_dialogo_4"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         tools:ignore="ContentDescription" />

@@ -131,12 +131,12 @@ public class SoJuego5Activity extends AppCompatActivity {
         return i == 7;
     }
 
-    public void regresaInicio() {
+    private void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }
 
-    public void mensajeGanador() {
+    private void mensajeGanador() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(SoJuego5Activity.this);
         alertDialog.setTitle("Felicidades");
         alertDialog.setMessage("¡Juego terminado!");

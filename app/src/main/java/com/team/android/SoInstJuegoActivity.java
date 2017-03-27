@@ -37,12 +37,12 @@ public class SoInstJuegoActivity extends AppCompatActivity {
 
     }
 
-    public void iniciaSiguiente() {
+    private void iniciaSiguiente() {
         Intent myIntent = new Intent(this, SoJuego5Activity.class);
         startActivity(myIntent);
     }
 
-    public void regresaInicio() {
+    private void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }

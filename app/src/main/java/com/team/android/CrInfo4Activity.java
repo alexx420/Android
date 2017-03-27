@@ -38,7 +38,7 @@ public class CrInfo4Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, CrInfo5Activity.class);
+        Intent myIntent = new Intent(this, CrInstJuegoActivity.class);
         startActivity(myIntent);
     }
 

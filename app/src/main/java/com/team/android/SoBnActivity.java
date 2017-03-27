@@ -34,12 +34,12 @@ public class SoBnActivity extends AppCompatActivity {
 
     }
 
-    public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, InInfo1Activity.class);
+    private void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, SoInfo1Activity.class);
         startActivity(myIntent);
     }
 
-    public void regresaInicio() {
+    private void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
         startActivity(myIntent);
     }

@@ -47,11 +47,6 @@
             android:label="@string/credito"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
-            android:name=".CrInfo5Activity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/credito"
-            android:theme="@style/FullscreenTheme"></activity>
-        <activity
             android:name=".CrInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
