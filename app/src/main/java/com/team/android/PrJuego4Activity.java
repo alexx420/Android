@@ -12,11 +12,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.DragEvent;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by alexx420 on 21/03/2017.
@@ -28,7 +26,6 @@ public class PrJuego4Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pr_juego4);
-
         //set listeners on long click
         findViewById(R.id.imageView_c1).setOnLongClickListener(listenClick);
         findViewById(R.id.imageView_c2).setOnLongClickListener(listenClick);
@@ -39,7 +36,6 @@ public class PrJuego4Activity extends AppCompatActivity {
         findViewById(R.id.imageView_c7).setOnLongClickListener(listenClick);
         findViewById(R.id.imageView_c8).setOnLongClickListener(listenClick);
         findViewById(R.id.imageView_c9).setOnLongClickListener(listenClick);
-
         //set listeners on drag
         findViewById(R.id.imageView_p1).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p2).setOnDragListener(listenDrag);
@@ -53,7 +49,7 @@ public class PrJuego4Activity extends AppCompatActivity {
         findViewById(R.id.imageView_p10).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p11).setOnDragListener(listenDrag);
         findViewById(R.id.imageView_p12).setOnDragListener(listenDrag);
-
+        //btn home regresa a menu
         findViewById(R.id.btn_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,14 +76,10 @@ public class PrJuego4Activity extends AppCompatActivity {
         public void onProvideShadowMetrics(Point shadowSize,
                                            Point shadowTouchPoint) {
             View v = getView();
-
             int height = (int) v.getHeight();
             int width = (int) v.getWidth();
-
             greyBox.setBounds(0, 0, width, height);
-
             shadowSize.set(width, height);
-
             shadowTouchPoint.set((int) width / 2, (int) height / 2);
         }
     }
@@ -107,12 +99,9 @@ public class PrJuego4Activity extends AppCompatActivity {
     View.OnLongClickListener listenClick = new View.OnLongClickListener() {
         @Override
         public boolean onLongClick(View v) {
-
             ClipData data = ClipData.newPlainText("", "");
             DragShadow dragShadow = new DragShadow(v);
-
             v.startDrag(data, dragShadow, v, 0);
-
             return false;
         }
     };
@@ -122,29 +111,23 @@ public class PrJuego4Activity extends AppCompatActivity {
         @Override
         public boolean onDrag(View v, DragEvent event) {
             int dragEvent = event.getAction();
-
             switch (dragEvent) {
                 case DragEvent.ACTION_DROP:
                     ImageView target = (ImageView) v;
-
                     ImageView dragged = (ImageView) event.getLocalState();
-
                     Drawable target_draw = target.getDrawable();
                     Drawable dragged_draw = dragged.getDrawable();
-
                     if (validaRespuesta(dragged, target)) {
                         dragged.setImageDrawable(target_draw);
                         target.setImageDrawable(dragged_draw);
                         target.setTag("success");
                     }
-
                     if (validaVictoria()) {
                         mensajeGanador();
                         muestraTotal();
                     }
                     break;
             }
-
             return true;
         }
     };
@@ -153,7 +136,7 @@ public class PrJuego4Activity extends AppCompatActivity {
      * Muestra la imagen de total en calculadora
      */
     private void muestraTotal() {
-        //TODO mostrar imagen total en la calculadora
+        findViewById(R.id.imageView_total).setVisibility(View.VISIBLE);
     }
 
     /**
@@ -176,11 +159,9 @@ public class PrJuego4Activity extends AppCompatActivity {
         list.add(findViewById(R.id.imageView_p10));
         list.add(findViewById(R.id.imageView_p11));
         list.add(findViewById(R.id.imageView_p12));
-
-        for (View t : list) {
+        for (View t : list)
             if (t.getTag().equals("success"))
                 i++;
-        }
         return i == 9;
     }
 

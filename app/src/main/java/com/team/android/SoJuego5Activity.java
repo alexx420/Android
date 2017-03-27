@@ -56,16 +56,16 @@ public class SoJuego5Activity extends AppCompatActivity {
                     break;
                 case R.id.imageButton_f2:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
-                button.setTag("success");
                 case R.id.imageButton_f3:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
-                button.setTag("success");
                 case R.id.imageButton_f4:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
-                button.setTag("success");
                 case R.id.imageButton_f5:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;

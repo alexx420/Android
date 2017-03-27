@@ -1,19 +1,13 @@
 package com.team.android;
 
-import android.content.ClipData;
 import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Point;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 /**
  * Created by alexx420 on 21/03/2017.
@@ -25,7 +19,6 @@ public class PrJuego3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pr_juego3);
-
         //set listeners on click
         findViewById(R.id.imageButton_o1).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_o2).setOnClickListener(clickListener);
@@ -39,14 +32,25 @@ public class PrJuego3Activity extends AppCompatActivity {
         findViewById(R.id.imageButton_o10).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_o11).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_o12).setOnClickListener(clickListener);
-
+        //btn inicia siguiente
+        findViewById(R.id.btn_siguiente).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iniciaSiguiente();
+            }
+        });
+        //btn home regresa al menu
         findViewById(R.id.btn_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 regresaInicio();
             }
         });
+    }
 
+    public void iniciaSiguiente() {
+        Intent myIntent = new Intent(this, PrJuego4Activity.class);
+        startActivity(myIntent);
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
@@ -56,117 +60,78 @@ public class PrJuego3Activity extends AppCompatActivity {
             int id = v.getId();
             switch (id) {
                 case R.id.imageButton_o1:
-                    if (button.getTag().equals("img_pr_casilla1_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla1);
-                        button.setTag("img_pr_casilla1");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla1_uf);
-                        button.setTag("img_pr_casilla1_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla1_err);
                     break;
                 case R.id.imageButton_o2:
-                    if (button.getTag().equals("img_pr_casilla2_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla2);
-                        button.setTag("img_pr_casilla2");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla2_uf);
-                        button.setTag("img_pr_casilla2_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla2_ok);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_o3:
-                    if (button.getTag().equals("img_pr_casilla3_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla3);
-                        button.setTag("img_pr_casilla3");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla3_uf);
-                        button.setTag("img_pr_casilla3_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla3_err);
                     break;
                 case R.id.imageButton_o4:
-                    if (button.getTag().equals("img_pr_casilla4_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla4);
-                        button.setTag("img_pr_casilla4");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla4_uf);
-                        button.setTag("img_pr_casilla4_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla4_err);
                     break;
                 case R.id.imageButton_o5:
-                    if (button.getTag().equals("img_pr_casilla5_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla5);
-                        button.setTag("img_pr_casilla5");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla5_uf);
-                        button.setTag("img_pr_casilla5_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla5_ok);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_o6:
-                    if (button.getTag().equals("img_pr_casilla6_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla6);
-                        button.setTag("img_pr_casilla6");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla6_uf);
-                        button.setTag("img_pr_casilla6_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla6_ok);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_o7:
-                    if (button.getTag().equals("img_pr_casilla7_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla7);
-                        button.setTag("img_pr_casilla7");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla7_uf);
-                        button.setTag("img_pr_casilla7_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla7_err);
                     break;
                 case R.id.imageButton_o8:
-                    if (button.getTag().equals("img_pr_casilla8_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla8);
-                        button.setTag("img_pr_casilla8");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla8_uf);
-                        button.setTag("img_pr_casilla8_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla8_ok);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_o9:
-                    if (button.getTag().equals("img_pr_casilla9_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla9);
-                        button.setTag("img_pr_casilla9");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla9_uf);
-                        button.setTag("img_pr_casilla9_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla9_err);
                     break;
                 case R.id.imageButton_o10:
-                    if (button.getTag().equals("img_pr_casilla10_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla10);
-                        button.setTag("img_pr_casilla10");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla10_uf);
-                        button.setTag("img_pr_casilla10_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla10_err);
                     break;
                 case R.id.imageButton_o11:
-                    if (button.getTag().equals("img_pr_casilla11_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla11);
-                        button.setTag("img_pr_casilla11");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla11_uf);
-                        button.setTag("img_pr_casilla11_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla11_ok);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_o12:
-                    if (button.getTag().equals("img_pr_casilla12_uf")) {
-                        button.setImageResource(R.drawable.img_pr_casilla12);
-                        button.setTag("img_pr_casilla12");
-                    } else {
-                        button.setImageResource(R.drawable.img_pr_casilla12_uf);
-                        button.setTag("img_pr_casilla12_uf");
-                    }
+                    button.setImageResource(R.drawable.btn_pr_j3_casilla12_ok);
+                    button.setTag("success");
                     break;
             }
-            //TODO Hacer funcion que valide que ya se seleccionaron todos los elementos correctamente
+            if (validaVictoria())
+                mensajeGanador();
         }
     };
+
+    /**
+     * Valida que todos los elementos esten en las casillas correctas para terminar el juego
+     *
+     * @return
+     */
+    private boolean validaVictoria() {
+        int i = 0;
+        ArrayList<View> list = new ArrayList<>();
+        list.add(findViewById(R.id.imageButton_o1));
+        list.add(findViewById(R.id.imageButton_o2));
+        list.add(findViewById(R.id.imageButton_o3));
+        list.add(findViewById(R.id.imageButton_o4));
+        list.add(findViewById(R.id.imageButton_o5));
+        list.add(findViewById(R.id.imageButton_o6));
+        list.add(findViewById(R.id.imageButton_o7));
+        list.add(findViewById(R.id.imageButton_o8));
+        list.add(findViewById(R.id.imageButton_o9));
+        list.add(findViewById(R.id.imageButton_o10));
+        list.add(findViewById(R.id.imageButton_o11));
+        list.add(findViewById(R.id.imageButton_o12));
+        for (View t : list)
+            if (t.getTag().equals("success"))
+                i++;
+        return i == 6;
+    }
 
 
     public void regresaInicio() {
