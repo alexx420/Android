@@ -225,5 +225,16 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
             android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SoJuego5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sobre_endeudamiento"
+            android:theme="@style/FullscreenTheme">
+            <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

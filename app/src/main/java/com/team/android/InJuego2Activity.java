@@ -96,7 +96,7 @@ public class InJuego2Activity extends AppCompatActivity {
     public void mensajeGanador() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(InJuego2Activity.this);
         alertDialog.setTitle("Felicidades");
-        alertDialog.setMessage("Has llegado a la meta!");
+        alertDialog.setMessage("¡Juego terminado!");
         alertDialog.show();
     }
 

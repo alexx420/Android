@@ -63,7 +63,7 @@ public class CrJuego1Activity extends AppCompatActivity {
     public void mensajeGanador() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(CrJuego1Activity.this);
         alertDialog.setTitle("Felicidades");
-        alertDialog.setMessage("Has llegado a la meta!");
+        alertDialog.setMessage("¡Juego terminado!");
         alertDialog.show();
     }
 

@@ -177,7 +177,7 @@ public class PrJuego3Activity extends AppCompatActivity {
     public void mensajeGanador() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(PrJuego3Activity.this);
         alertDialog.setTitle("Felicidades");
-        alertDialog.setMessage("Has llegado a la meta!");
+        alertDialog.setMessage("¡Juego terminado!");
         alertDialog.show();
     }
 

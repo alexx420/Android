@@ -100,7 +100,7 @@ public class PrJuego4Activity extends AppCompatActivity {
     private void mensajeGanador() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(PrJuego4Activity.this);
         alertDialog.setTitle("Felicidades");
-        alertDialog.setMessage("Juego terminado!");
+        alertDialog.setMessage("¡Juego terminado!");
         alertDialog.show();
     }
 
