@@ -12,14 +12,12 @@ import java.util.ArrayList;
 /**
  * Created by alexx420 on 21/03/2017.
  */
-
 public class SoJuego5Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_so_juego5);
-
         //set listeners on click
         findViewById(R.id.imageButton_f1).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_v1).setOnClickListener(clickListener);
@@ -35,14 +33,13 @@ public class SoJuego5Activity extends AppCompatActivity {
         findViewById(R.id.imageButton_v6).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_f7).setOnClickListener(clickListener);
         findViewById(R.id.imageButton_v7).setOnClickListener(clickListener);
-
+        //btn home regresa a menu
         findViewById(R.id.btn_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 regresaInicio();
             }
         });
-
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {
@@ -101,7 +98,6 @@ public class SoJuego5Activity extends AppCompatActivity {
                     button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
                     break;
             }
-
             if (validaVictoria())
                 mensajeGanador();
         }
@@ -129,15 +125,11 @@ public class SoJuego5Activity extends AppCompatActivity {
         list.add(findViewById(R.id.imageButton_v6));
         list.add(findViewById(R.id.imageButton_f7));
         list.add(findViewById(R.id.imageButton_v7));
-
-
-        for (View t : list) {
-            if (t.getTag().equals("success"))
+        for (View t : list)
+            if (("success").equals(t.getTag()))
                 i++;
-        }
         return i == 7;
     }
-
 
     public void regresaInicio() {
         Intent myIntent = new Intent(this, MenuActivity.class);
@@ -150,8 +142,6 @@ public class SoJuego5Activity extends AppCompatActivity {
         alertDialog.setMessage("¡Juego terminado!");
         alertDialog.show();
     }
-
-
 }
 
 

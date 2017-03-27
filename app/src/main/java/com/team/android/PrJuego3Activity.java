@@ -128,7 +128,7 @@ public class PrJuego3Activity extends AppCompatActivity {
         list.add(findViewById(R.id.imageButton_o11));
         list.add(findViewById(R.id.imageButton_o12));
         for (View t : list)
-            if (t.getTag().equals("success"))
+            if (("success").equals(t.getTag()))
                 i++;
         return i == 6;
     }

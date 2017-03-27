@@ -132,7 +132,7 @@ public class InJuego2Activity extends AppCompatActivity {
         list.add(findViewById(R.id.imageView_p5));
         list.add(findViewById(R.id.imageView_p6));
         for (View t : list)
-            if (t.getTag().equals("success"))
+            if (("success").equals(t.getTag()))
                 i++;
         return i == 4;
     }
@@ -149,7 +149,7 @@ public class InJuego2Activity extends AppCompatActivity {
         String targetTag = (String) target.getTag();
         switch (targetTag) {
             case "imageView_p2":
-                if (draggedTag.equals("imageView_c1"))
+                if (draggedTag.equals("imageView_c4"))
                     return true;
                 break;
             case "imageView_p3":
@@ -161,7 +161,7 @@ public class InJuego2Activity extends AppCompatActivity {
                     return true;
                 break;
             case "imageView_p4":
-                if (draggedTag.equals("imageView_c4"))
+                if (draggedTag.equals("imageView_c1"))
                     return true;
                 break;
         }

@@ -160,7 +160,7 @@ public class PrJuego4Activity extends AppCompatActivity {
         list.add(findViewById(R.id.imageView_p11));
         list.add(findViewById(R.id.imageView_p12));
         for (View t : list)
-            if (t.getTag().equals("success"))
+            if (("success").equals(t.getTag()))
                 i++;
         return i == 9;
     }
