@@ -6,18 +6,7 @@
     android:layout_height="fill_parent"
     android:background="@drawable/img_fondo">
 
-    <ImageButton
-        android:id="@+id/btn_in_intereses"
-        android:layout_width="139dp"
-        android:layout_height="171dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_in_intereses"
-        tools:ignore="ContentDescription"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_toStartOf="@+id/imageView3" />
-
+    <!--header-->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
@@ -37,6 +26,17 @@
         app:srcCompat="@drawable/img_pleca_roja"
         tools:ignore="ContentDescription" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_siguiente"
+        tools:ignore="ContentDescription" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -45,6 +45,17 @@
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
         android:src="@drawable/img_fonacot"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView15"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_home"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -59,6 +70,17 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView14"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_si_icono"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
         android:id="@+id/imageView14"
         android:layout_width="550dp"
         android:layout_height="10dp"
@@ -70,22 +92,31 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="255dp"
-        android:layout_height="74dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_bienvenido"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/img_si_titulo2"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton2"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_atras"
+        tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="517dp"
-        android:layout_height="74dp"
-        android:scaleType="fitXY"
+        android:id="@+id/imageView24"
+        android:layout_width="1000dp"
+        android:layout_height="230dp"
         android:layout_below="@+id/imageView17"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_financiera"
+        app:srcCompat="@drawable/img_si_dialogo5"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -94,10 +125,9 @@
         android:layout_height="155dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_nino"
-        android:layout_alignTop="@+id/imageView8"
-        android:layout_toEndOf="@+id/imageView12"
-        android:layout_marginStart="48dp"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView17" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -108,53 +138,5 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_nina"
         tools:ignore="ContentDescription" />
-
-    <ImageButton
-        android:id="@+id/btn_cr_credito"
-        android:layout_width="139dp"
-        android:layout_height="171dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_cr_credito"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageView15"
-        android:layout_toStartOf="@+id/btn_in_intereses"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="36dp" />
-
-    <ImageButton
-        android:id="@+id/btn_so_endeudamiento"
-        android:layout_width="139dp"
-        android:layout_height="171dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_si_simulador"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/btn_cr_credito"
-        android:layout_toEndOf="@+id/imageButton"
-        android:layout_marginStart="78dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="139dp"
-        android:layout_height="171dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_so_endeudamiento"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/btn_in_intereses"
-        android:layout_toEndOf="@+id/imageView8"
-        android:layout_marginStart="27dp" />
-
-    <ImageButton
-        android:id="@+id/btn_pr_presupuesto"
-        android:layout_width="139dp"
-        android:layout_height="171dp"
-        android:background="@null"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btn_pr_presupuesto"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageView3"
-        android:layout_toEndOf="@+id/imageView15" />
 
 </RelativeLayout>
