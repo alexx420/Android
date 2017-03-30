@@ -149,7 +149,7 @@ public class InJuego2Activity extends AppCompatActivity {
         String targetTag = (String) target.getTag();
         switch (targetTag) {
             case "imageView_p2":
-                if (draggedTag.equals("imageView_c4"))
+                if (draggedTag.equals("imageView_c1"))
                     return true;
                 break;
             case "imageView_p3":
@@ -161,7 +161,7 @@ public class InJuego2Activity extends AppCompatActivity {
                     return true;
                 break;
             case "imageView_p4":
-                if (draggedTag.equals("imageView_c1"))
+                if (draggedTag.equals("imageView_c4"))
                     return true;
                 break;
         }
