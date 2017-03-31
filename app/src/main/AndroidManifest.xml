@@ -254,11 +254,6 @@
             android:label="@string/simulador"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
-            android:name=".SiPlazoActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/simulador"
-            android:theme="@style/FullscreenTheme"></activity>
-        <activity
             android:name=".SiSimula1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"

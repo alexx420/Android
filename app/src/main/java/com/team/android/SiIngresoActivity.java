@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 public class SiIngresoActivity extends AppCompatActivity {
 
-    private int ingreso;
+    private int ingreso = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,29 @@ public class SiIngresoActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, SiPlazoActivity.class);
-        myIntent.putExtra("ingreso", ingreso);
-        startActivity(myIntent);
+        Intent myIntent = null;
+        if (ingreso == -1)
+            Toast.makeText(SiIngresoActivity.this, "Selecciona un ingreso", Toast.LENGTH_SHORT).show();
+        else {
+            switch (ingreso) {
+                case 1:
+                    myIntent = new Intent(this, SiSimula1Activity.class);
+                    break;
+                case 2:
+                    myIntent = new Intent(this, SiSimula2Activity.class);
+                    break;
+                case 3:
+                    myIntent = new Intent(this, SiSimula3Activity.class);
+                    break;
+                case 4:
+                    myIntent = new Intent(this, SiSimula4Activity.class);
+                    break;
+                case 5:
+                    myIntent = new Intent(this, SiSimula5Activity.class);
+                    break;
+            }
+            startActivity(myIntent);
+        }
     }
 
     public void regresaInicio() {
@@ -69,6 +89,4 @@ public class SiIngresoActivity extends AppCompatActivity {
             Toast.makeText(SiIngresoActivity.this, "Presiona siguiente para continuar", Toast.LENGTH_SHORT).show();
         }
     };
-
-
 }
