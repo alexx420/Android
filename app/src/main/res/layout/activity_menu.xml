@@ -123,7 +123,7 @@
         android:layout_marginBottom="36dp" />
 
     <ImageButton
-        android:id="@+id/btn_so_endeudamiento"
+        android:id="@+id/btn_si_simulador"
         android:layout_width="139dp"
         android:layout_height="171dp"
         android:background="@null"
@@ -131,11 +131,11 @@
         app:srcCompat="@drawable/btn_si_simulador"
         tools:ignore="ContentDescription"
         android:layout_alignTop="@+id/btn_cr_credito"
-        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/btn_so_endeudamiento"
         android:layout_marginStart="78dp" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_so_endeudamiento"
         android:layout_width="139dp"
         android:layout_height="171dp"
         android:background="@null"

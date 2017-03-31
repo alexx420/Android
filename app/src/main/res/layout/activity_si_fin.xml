@@ -26,17 +26,6 @@
         app:srcCompat="@drawable/img_pleca_roja"
         tools:ignore="ContentDescription" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:background="@null"
-        android:contentDescription=""
-        android:src="@drawable/btn_siguiente"
-        tools:ignore="ContentDescription" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -100,15 +89,15 @@
         tools:ignore="ContentDescription" />
 
     <ImageButton
-        android:id="@+id/btn_siguiente"
+        android:id="@+id/btn_anterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton2"
         android:background="@null"
         android:contentDescription=""
         android:src="@drawable/btn_atras"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -123,11 +112,11 @@
         android:id="@+id/imageView3"
         android:layout_width="133dp"
         android:layout_height="155dp"
+        android:layout_above="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView17"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_nino"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageView15"
-        android:layout_alignStart="@+id/imageView17" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView8"

@@ -8,41 +8,39 @@ import android.widget.ImageButton;
 
 public class MenuActivity extends AppCompatActivity {
 
-    ImageButton menu_credito;
-    ImageButton menu_interes;
-    ImageButton menu_presupuesto;
-    ImageButton menu_sobre_endeudamiento;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        menu_credito = (ImageButton) findViewById(R.id.btn_cr_credito);
-        menu_interes = (ImageButton) findViewById(R.id.btn_in_intereses);
-        menu_presupuesto = (ImageButton) findViewById(R.id.btn_pr_presupuesto);
-        menu_sobre_endeudamiento = (ImageButton) findViewById(R.id.btn_so_endeudamiento);
-        menu_credito.setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.btn_cr_credito).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciaCredito();
             }
         });
-        menu_interes.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_in_intereses).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciaInteres();
             }
         });
-        menu_presupuesto.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_pr_presupuesto).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciaPresupuesto();
             }
         });
-        menu_sobre_endeudamiento.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_so_endeudamiento).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciaEndeudamiento();
+            }
+        });
+        findViewById(R.id.btn_si_simulador).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iniciaSimulador();
             }
         });
     }
@@ -64,6 +62,11 @@ public class MenuActivity extends AppCompatActivity {
 
     public void iniciaInteres() {
         Intent myIntent = new Intent(this, InBnActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void iniciaSimulador() {
+        Intent myIntent = new Intent(this, SiBnActivity.class);
         startActivity(myIntent);
     }
 }

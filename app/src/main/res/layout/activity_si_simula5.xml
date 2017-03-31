@@ -27,7 +27,7 @@
         tools:ignore="ContentDescription" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btn_siguiente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -110,15 +110,15 @@
         tools:ignore="ContentDescription" />
 
     <ImageButton
-        android:id="@+id/btn_siguiente"
+        android:id="@+id/btn_anterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton2"
         android:background="@null"
         android:contentDescription=""
         android:src="@drawable/btn_atras"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/btn_siguiente"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imageView24"

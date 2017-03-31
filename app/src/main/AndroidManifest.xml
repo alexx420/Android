@@ -237,5 +237,56 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!--Simulador-->
+        <activity
+            android:name=".SiBnActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiInfo1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiIngresoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiPlazoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiSimula1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiSimula2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiSimula3Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiSimula4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiSimula5Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
+            android:name=".SiFinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 </manifest>
