@@ -167,7 +167,7 @@ public class CrJuego1Activity extends AppCompatActivity {
 
         preguntaRandom = obtenerPreguntaRandom();
         try {
-            Thread.sleep(800);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
