@@ -49,53 +49,53 @@ public class SoJuego5Activity extends AppCompatActivity {
             int id = v.getId();
             switch (id) {
                 case R.id.imageButton_f1:
-                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_f2:
-                    button.setImageResource(R.drawable.btn_so_j5_falso);
-                    button.setTag("success");
-                    break;
-                case R.id.imageButton_f3:
-                    button.setImageResource(R.drawable.btn_so_j5_falso);
-                    button.setTag("success");
-                    break;
-                case R.id.imageButton_f4:
-                    button.setImageResource(R.drawable.btn_so_j5_falso);
-                    button.setTag("success");
-                    break;
-                case R.id.imageButton_f5:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
-                case R.id.imageButton_f6:
+                case R.id.imageButton_f3:
+                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    break;
+                case R.id.imageButton_f4:
+                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    break;
+                case R.id.imageButton_f5:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
                     button.setTag("success");
+                    break;
+                case R.id.imageButton_f6:
+                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
                 case R.id.imageButton_f7:
-                    button.setImageResource(R.drawable.btn_so_j5_falso);
-                    button.setTag("success");
+                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
                 case R.id.imageButton_v1:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
-                    button.setTag("success");
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
                     break;
                 case R.id.imageButton_v2:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
-                    break;
-                case R.id.imageButton_v3:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
-                    break;
-                case R.id.imageButton_v4:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
-                    break;
-                case R.id.imageButton_v5:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
                     break;
-                case R.id.imageButton_v6:
+                case R.id.imageButton_v3:
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
+                    button.setTag("success");
+                    break;
+                case R.id.imageButton_v4:
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
+                    button.setTag("success");
+                    break;
+                case R.id.imageButton_v5:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
                     break;
+                case R.id.imageButton_v6:
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
+                    button.setTag("success");
+                    break;
                 case R.id.imageButton_v7:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
+                    button.setTag("success");
                     break;
             }
             if (validaVictoria())

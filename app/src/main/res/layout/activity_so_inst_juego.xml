@@ -28,13 +28,15 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="621dp"
-        android:layout_height="152dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_in_juguemos"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView17"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/imageView4"
+        android:layout_toStartOf="@+id/btn_home"
+        android:layout_marginTop="24dp" />
+
 
     <ImageButton
         android:id="@+id/btn_siguiente"
@@ -75,9 +77,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nina"
         tools:ignore="ContentDescription"
-        android:layout_marginEnd="59dp"
-        android:layout_above="@+id/btn_home"
-        android:layout_toStartOf="@+id/imageView7" />
+        android:layout_alignTop="@+id/btn_siguiente"
+        android:layout_alignStart="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -112,12 +113,12 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
+        android:id="@+id/imageView26"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_so_titulo2"
+        app:srcCompat="@drawable/img_so_dialogo8"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView15"
         tools:ignore="ContentDescription" />
 
 </RelativeLayout>

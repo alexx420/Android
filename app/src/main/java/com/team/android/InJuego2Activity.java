@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -108,6 +109,8 @@ public class InJuego2Activity extends AppCompatActivity {
                     if (validaRespuesta(dragged, target)) {
                         target.setImageDrawable(dragged_draw);
                         target.setTag("success");
+                    } else {
+                        Toast.makeText(InJuego2Activity.this, "Incorrecto, revisa tu respuesta", Toast.LENGTH_SHORT).show();
                     }
                     if (validaVictoria())
                         mensajeGanador();

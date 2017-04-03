@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_fonacot"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MenuActivity"
@@ -255,6 +255,11 @@
             android:label="@string/simulador"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
+            android:name=".SiPlazoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/simulador"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity
             android:name=".SiSimula1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
@@ -279,10 +284,6 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
             android:theme="@style/FullscreenTheme"></activity>
-        <activity
-            android:name=".SiFinActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/simulador"
-            android:theme="@style/FullscreenTheme"></activity>
+
     </application>
 </manifest>

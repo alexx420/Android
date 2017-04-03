@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -61,6 +62,7 @@ public class PrJuego3Activity extends AppCompatActivity {
             switch (id) {
                 case R.id.imageButton_o1:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla1_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o2:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla2_ok);
@@ -68,9 +70,11 @@ public class PrJuego3Activity extends AppCompatActivity {
                     break;
                 case R.id.imageButton_o3:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla3_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o4:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla4_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o5:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla5_ok);
@@ -82,6 +86,7 @@ public class PrJuego3Activity extends AppCompatActivity {
                     break;
                 case R.id.imageButton_o7:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla7_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o8:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla8_ok);
@@ -89,9 +94,11 @@ public class PrJuego3Activity extends AppCompatActivity {
                     break;
                 case R.id.imageButton_o9:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla9_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o10:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla10_err);
+                    Toast.makeText(PrJuego3Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o11:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla11_ok);

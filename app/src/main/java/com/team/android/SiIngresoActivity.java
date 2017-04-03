@@ -24,7 +24,10 @@ public class SiIngresoActivity extends AppCompatActivity {
         findViewById(R.id.btn_siguiente).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciaSiguiente();
+                if (ingreso != -1)
+                    iniciaSiguiente();
+                else
+                    Toast.makeText(SiIngresoActivity.this, "Selecciona un ingreso", Toast.LENGTH_SHORT).show();
             }
         });
         findViewById(R.id.btn_home).setOnClickListener(new View.OnClickListener() {
@@ -36,29 +39,9 @@ public class SiIngresoActivity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = null;
-        if (ingreso == -1)
-            Toast.makeText(SiIngresoActivity.this, "Selecciona un ingreso", Toast.LENGTH_SHORT).show();
-        else {
-            switch (ingreso) {
-                case 1:
-                    myIntent = new Intent(this, SiSimula1Activity.class);
-                    break;
-                case 2:
-                    myIntent = new Intent(this, SiSimula2Activity.class);
-                    break;
-                case 3:
-                    myIntent = new Intent(this, SiSimula3Activity.class);
-                    break;
-                case 4:
-                    myIntent = new Intent(this, SiSimula4Activity.class);
-                    break;
-                case 5:
-                    myIntent = new Intent(this, SiSimula5Activity.class);
-                    break;
-            }
-            startActivity(myIntent);
-        }
+        Intent myIntent = new Intent(this, SiPlazoActivity.class);
+        myIntent.putExtra("ingreso", ingreso);
+        startActivity(myIntent);
     }
 
     public void regresaInicio() {
@@ -89,4 +72,6 @@ public class SiIngresoActivity extends AppCompatActivity {
             Toast.makeText(SiIngresoActivity.this, "Presiona siguiente para continuar", Toast.LENGTH_SHORT).show();
         }
     };
+
+
 }

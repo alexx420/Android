@@ -58,8 +58,6 @@ public class CrJuego1Activity extends AppCompatActivity {
         builder.setTitle("Pregunta");
         builder.setCancelable(false);
         builder.create();
-        System.gc();
-
     }
 
     public void regresaInicio() {
@@ -160,7 +158,7 @@ public class CrJuego1Activity extends AppCompatActivity {
         if (isAcierto)
             Toast.makeText(this, "Correcto! avanzas a la siguiente casilla", Toast.LENGTH_SHORT).show();
         else
-            Toast.makeText(this, "Incorrecto, retrocedes las casillas que avanzaste", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrecto, te quedas en tu misma casilla", Toast.LENGTH_SHORT).show();
     }
 
     private void muestraPregunta() {
@@ -176,7 +174,7 @@ public class CrJuego1Activity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         if (preguntaRandom.isRespuesta())
                             avanzaCasillas();
-                        dialog.cancel();
+                        dialog.dismiss();
                         muestraToast(preguntaRandom.isRespuesta());
                     }
                 })
@@ -184,7 +182,7 @@ public class CrJuego1Activity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         if (!preguntaRandom.isRespuesta())
                             avanzaCasillas();
-                        dialog.cancel();
+                        dialog.dismiss();
                         muestraToast(!preguntaRandom.isRespuesta());
                     }
                 });
@@ -205,4 +203,3 @@ public class CrJuego1Activity extends AppCompatActivity {
 
 
 }
-
