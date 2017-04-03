@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -25,6 +24,8 @@ public class CrJuego1Activity extends AppCompatActivity {
     private boolean ganador = false;
     private Pregunta anterior = null;
     private int valorDado;
+    Pregunta preguntaRandom = obtenerPreguntaRandom();
+    AlertDialog.Builder builder;
 
 
     @Override
@@ -42,11 +43,7 @@ public class CrJuego1Activity extends AppCompatActivity {
         dado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    tiraDado();
-                } catch (Exception e) {
-                    Log.e(this.toString(), e.getMessage());
-                }
+                tiraDado();
             }
         });
 
@@ -56,6 +53,12 @@ public class CrJuego1Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
+
+        builder = new AlertDialog.Builder(CrJuego1Activity.this);
+        builder.setTitle("Pregunta");
+        builder.setCancelable(false);
+        builder.create();
+        System.gc();
 
     }
 
@@ -71,7 +74,7 @@ public class CrJuego1Activity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    public void tiraDado() throws NoSuchFieldException, IllegalAccessException {
+    public void tiraDado() {
         //pregunta si es ganador
         if (ganador) {
             //si
@@ -104,19 +107,17 @@ public class CrJuego1Activity extends AppCompatActivity {
             }
             //muestra pregunta si es acierto avanza las casillas sino se regresa
             muestraPregunta();
+
         }
     }
 
-    public void avanzaCasillas() throws NoSuchFieldException, IllegalAccessException {
+    public void avanzaCasillas() {
         int anterior = this.pos;
         //pregunta si llega a la meta
-        if (this.pos + valorDado == this.meta) {
+        if (this.pos + valorDado >= this.meta) {
             //es ganador
             this.ganador = true;
-            this.pos += valorDado;
-        } else if (this.pos + valorDado > this.meta) {
-            //pregunta si se pasa
-            //no suma valor
+            this.pos = 22;
         } else {
             this.pos += valorDado;
         }
@@ -140,9 +141,19 @@ public class CrJuego1Activity extends AppCompatActivity {
         }
     }
 
-    public static int getId(String resourceName, Class<?> c) throws IllegalAccessException, NoSuchFieldException {
-        Field idField = c.getDeclaredField(resourceName);
-        return idField.getInt(idField);
+    public static int getId(String resourceName, Class<?> c) {
+        int id = -1;
+        Field idField;
+        try {
+            idField = c.getDeclaredField(resourceName);
+
+            id = idField.getInt(idField);
+
+        } catch (Exception e) {
+            System.err.println("mensaje: " + e.getMessage());
+            System.err.println("resopurce name: " + resourceName);
+        }
+        return id;
     }
 
     private void muestraToast(boolean isAcierto) {
@@ -153,38 +164,32 @@ public class CrJuego1Activity extends AppCompatActivity {
     }
 
     private void muestraPregunta() {
-        final Pregunta preguntaRandom = obtenerPreguntaRandom();
-        AlertDialog.Builder builder = new AlertDialog.Builder(CrJuego1Activity.this);
-        builder.setTitle("Pregunta");
+
+        preguntaRandom = obtenerPreguntaRandom();
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         builder.setMessage(preguntaRandom.getPregunta())
-                .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Verdadero", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         if (preguntaRandom.isRespuesta())
-                            try {
-                                avanzaCasillas();
-                            } catch (NoSuchFieldException e) {
-                                e.printStackTrace();
-                            } catch (IllegalAccessException e) {
-                                e.printStackTrace();
-                            }
+                            avanzaCasillas();
+                        dialog.cancel();
                         muestraToast(preguntaRandom.isRespuesta());
                     }
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Falso", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         if (!preguntaRandom.isRespuesta())
-                            try {
-                                avanzaCasillas();
-                            } catch (NoSuchFieldException e) {
-                                e.printStackTrace();
-                            } catch (IllegalAccessException e) {
-                                e.printStackTrace();
-                            }
+                            avanzaCasillas();
+                        dialog.cancel();
                         muestraToast(!preguntaRandom.isRespuesta());
                     }
                 });
-        builder.create();
         builder.show();
+
     }
 
     private Pregunta obtenerPreguntaRandom() {
@@ -201,33 +206,3 @@ public class CrJuego1Activity extends AppCompatActivity {
 
 }
 
-enum Pregunta {
-
-    P_1("¿Usamos el crédito cuando tenemos la necesidad o la meta de adquirir un bien cuyo valor esta fuera de nuestras Posibilidades?", true),
-    P_2("¿Sólo podemos usar el crédito a nuestro favor para comprar productos simples y cotidianos?", false),
-    P_3("¿Sólo podemos usar el crédito a nuestro favor para comprar productos con precio elevado?", false),
-    P_4("¿En la sociedad actual prácticamente no hay consumo importante sin crédito?", true),
-    P_5("¿En la sociedad actual prácticamente no hay necesidad de utilizar el crédito?", false),
-    P_6("¿El crédito nunca se puede usar a nuestro favor?", false),
-    P_7("¿El crédito es un instrumento financiero?", true),
-    P_8("¿El crédito bien utilizado se puede usar a nuestro favor?", true),
-    P_9("¿El crédito es un instrumento estadístico?", false);
-
-    private final String pregunta;
-    private final boolean respuesta;
-
-    Pregunta(String pregunta, boolean respuesta) {
-        this.pregunta = pregunta;
-        this.respuesta = respuesta;
-    }
-
-    public String getPregunta() {
-        return pregunta;
-    }
-
-    public boolean isRespuesta() {
-        return respuesta;
-    }
-
-
-}
