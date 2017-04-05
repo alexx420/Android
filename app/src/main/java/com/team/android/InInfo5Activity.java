@@ -34,7 +34,12 @@ public class InInfo5Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InInfo5Activity.this, InInfo4Activity.class));
+            }
+        });
     }
 
     private void regresaInicio() {

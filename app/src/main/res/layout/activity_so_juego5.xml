@@ -20,11 +20,11 @@
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_pleca_roja"
-        tools:ignore="ContentDescription"
-        android:layout_marginBottom="45dp"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/img_pleca_roja"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -51,22 +51,22 @@
         android:id="@+id/imageView13"
         android:layout_width="100dp"
         android:layout_height="180dp"
+        android:layout_above="@+id/imageView16"
+        android:layout_marginEnd="76dp"
+        android:layout_toStartOf="@+id/imageView16"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nina"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageView16"
-        android:layout_toStartOf="@+id/imageView16"
-        android:layout_marginEnd="76dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="550dp"
         android:layout_height="10dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_plecamini_verde"
-        android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_verde"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -84,19 +84,19 @@
         android:id="@+id/imageView14"
         android:layout_width="550dp"
         android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView15"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_plecamini_roja"
-        android:layout_alignTop="@+id/imageView15"
-        android:layout_alignParentEnd="true"
         tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="240dp"
         android:layout_height="180dp"
-        app:srcCompat="@drawable/img_so_j5_dialogo"
         android:layout_below="@+id/imageView"
         android:layout_toStartOf="@+id/imageView16"
+        app:srcCompat="@drawable/img_so_j5_dialogo"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -105,9 +105,9 @@
         android:layout_height="350dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_so_j5_panel"
+        tools:ignore="ContentDescription"
         android:layout_above="@+id/btn_home"
-        android:layout_toStartOf="@+id/imageView14"
-        tools:ignore="ContentDescription" />
+        android:layout_toStartOf="@+id/imageButton_v7" />
 
     <ImageButton
         android:id="@+id/imageButton_v7"
@@ -183,8 +183,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_so_j5_verdadero_uf"
         tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageButton_f2"
-        android:layout_toEndOf="@+id/imageView20" />
+        android:layout_alignTop="@+id/imageButton_f1"
+        android:layout_alignStart="@+id/imageView4" />
 
     <ImageButton
         android:id="@+id/imageButton_f7"
@@ -195,7 +195,7 @@
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageButton_f6"
-        android:layout_alignStart="@+id/imageButton_f6" />
+        android:layout_toStartOf="@+id/imageView10" />
 
     <ImageButton
         android:id="@+id/imageButton_f6"
@@ -206,7 +206,7 @@
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageButton_f5"
-        android:layout_alignStart="@+id/imageButton_f5" />
+        android:layout_alignStart="@+id/imageButton_f7" />
 
     <ImageButton
         android:id="@+id/imageButton_f5"
@@ -217,7 +217,7 @@
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageButton_f4"
-        android:layout_alignStart="@+id/imageButton_f4" />
+        android:layout_alignStart="@+id/imageButton_f6" />
 
     <ImageButton
         android:id="@+id/imageButton_f4"
@@ -227,8 +227,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageButton_f3"
-        android:layout_alignStart="@+id/imageButton_f3" />
+        android:layout_below="@+id/imageView10"
+        android:layout_alignStart="@+id/imageButton_f5" />
 
     <ImageButton
         android:id="@+id/imageButton_f3"
@@ -238,8 +238,8 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
-        android:layout_alignBottom="@+id/imageView10"
-        android:layout_alignStart="@+id/imageButton_f2" />
+        android:layout_above="@+id/imageButton_f4"
+        android:layout_alignStart="@+id/imageButton_f4" />
 
     <ImageButton
         android:id="@+id/imageButton_f2"
@@ -250,7 +250,7 @@
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageButton_f1"
-        android:layout_alignStart="@+id/imageButton_f1" />
+        android:layout_alignStart="@+id/imageButton_f3" />
 
     <ImageButton
         android:id="@+id/imageButton_f1"
@@ -261,6 +261,17 @@
         app:srcCompat="@drawable/btn_so_j5_falso_uf"
         tools:ignore="ContentDescription"
         android:layout_alignTop="@+id/imageView20"
-        android:layout_alignStart="@+id/imageView4" />
+        android:layout_toStartOf="@+id/imageView10" />
+
+    <ImageButton
+        android:id="@+id/btn_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_atras"
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

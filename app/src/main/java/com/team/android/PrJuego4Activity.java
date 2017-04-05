@@ -57,6 +57,12 @@ public class PrJuego4Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrJuego4Activity.this, PrJuego3Activity.class));
+            }
+        });
 
     }
 
@@ -122,7 +128,7 @@ public class PrJuego4Activity extends AppCompatActivity {
                         dragged.setImageDrawable(target_draw);
                         target.setImageDrawable(dragged_draw);
                         target.setTag("success");
-                    }else{
+                    } else {
                         Toast.makeText(PrJuego4Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     }
                     if (validaVictoria()) {

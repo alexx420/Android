@@ -3,6 +3,7 @@ package com.team.android;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -26,7 +27,12 @@ public class SiBnActivity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SiBnActivity.this, MenuActivity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

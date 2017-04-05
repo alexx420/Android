@@ -26,7 +26,12 @@ public class SiInfo1Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SiInfo1Activity.this, SiBnActivity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

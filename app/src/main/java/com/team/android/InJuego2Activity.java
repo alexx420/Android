@@ -48,6 +48,12 @@ public class InJuego2Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(InJuego2Activity.this, InInstJuegoActivity.class));
+            }
+        });
     }
 
     private class DragShadow extends View.DragShadowBuilder {

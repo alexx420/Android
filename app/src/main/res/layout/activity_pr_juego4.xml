@@ -30,12 +30,11 @@
         android:id="@+id/imageView7"
         android:layout_width="280dp"
         android:layout_height="132dp"
-        android:layout_alignBottom="@+id/imageView13"
-        android:layout_alignEnd="@+id/imageView15"
-        android:layout_marginEnd="39dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_pr_j4_dialogo"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignBottom="@+id/imageView19"
+        android:layout_toEndOf="@+id/imageView_c1" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -109,8 +108,8 @@
         android:tag="img_pr_j4_casilla7"
         app:srcCompat="@drawable/img_pr_j4_casilla7"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView_c3"
-        android:layout_toEndOf="@+id/imageView_c6" />
+        android:layout_alignTop="@+id/imageView_c8"
+        android:layout_toStartOf="@+id/imageView_c8" />
 
     <ImageView
         android:id="@+id/imageView_c9"
@@ -119,8 +118,9 @@
         android:tag="img_pr_j4_casilla9"
         app:srcCompat="@drawable/img_pr_j4_casilla9"
         tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/imageView_c8"
-        android:layout_toEndOf="@+id/imageView_c8" />
+        android:layout_below="@+id/imageView_c5"
+        android:layout_alignEnd="@+id/imageView_c5"
+        android:layout_marginEnd="35dp" />
 
     <ImageView
         android:id="@+id/imageView_c8"
@@ -129,8 +129,8 @@
         android:tag="img_pr_j4_casilla8"
         app:srcCompat="@drawable/img_pr_j4_casilla8"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView_p1"
-        android:layout_toEndOf="@+id/imageView_c7" />
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/imageView_c9" />
 
     <ImageView
         android:id="@+id/imageView_c6"
@@ -139,58 +139,58 @@
         android:tag="img_pr_j4_casilla6"
         app:srcCompat="@drawable/img_pr_j4_casilla6"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView_c2"
-        android:layout_alignEnd="@+id/imageView13" />
+        android:layout_alignTop="@+id/imageView_c7"
+        android:layout_toStartOf="@+id/imageView_c7" />
 
     <ImageView
         android:id="@+id/imageView_c5"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_below="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView_c4"
         android:tag="img_pr_j4_casilla5"
         app:srcCompat="@drawable/img_pr_j4_casilla5"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/btn_home" />
 
     <ImageView
         android:id="@+id/imageView_c4"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_below="@+id/imageView12"
-        android:layout_toEndOf="@+id/imageView_c3"
         android:tag="img_pr_j4_casilla4"
         app:srcCompat="@drawable/img_pr_j4_casilla4"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView_c5" />
 
     <ImageView
         android:id="@+id/imageView_c3"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_below="@+id/imageView12"
-        android:layout_toEndOf="@+id/imageView_c2"
         android:tag="img_pr_j4_casilla3"
         app:srcCompat="@drawable/img_pr_j4_casilla3"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView_c4" />
 
     <ImageView
         android:id="@+id/imageView_c2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignTop="@+id/imageView_c1"
-        android:layout_toEndOf="@+id/imageView_c1"
         android:tag="img_pr_j4_casilla2"
         app:srcCompat="@drawable/img_pr_j4_casilla2"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView_c3" />
 
     <ImageView
         android:id="@+id/imageView_c1"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView12"
         android:tag="img_pr_j4_casilla1"
         app:srcCompat="@drawable/img_pr_j4_casilla1"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView_c2" />
 
     <ImageView
         android:id="@+id/imageView19"
@@ -361,6 +361,17 @@
         android:visibility="invisible"
         app:srcCompat="@drawable/img_pr_j4_total"
         tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_atras"
+        tools:ignore="ContentDescription"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
 
 

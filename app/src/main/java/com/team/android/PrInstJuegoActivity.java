@@ -11,30 +11,29 @@ import android.widget.ImageButton;
  */
 
 public class PrInstJuegoActivity extends AppCompatActivity {
-    ImageButton siguiente;
-    ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pr_inst_juego);
-        siguiente = (ImageButton) findViewById(R.id.btn_siguiente);
-        home = (ImageButton) findViewById(R.id.btn_home);
-
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_siguiente).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 iniciaSiguiente();
             }
         });
-
-        home.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrInstJuegoActivity.this, PrInfo8Activity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

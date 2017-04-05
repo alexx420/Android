@@ -14,10 +14,10 @@
             android:name=".MenuActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,31 +26,37 @@
             android:name=".CrBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".CrInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".CrInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/credito"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".CrJuego1Activity"
@@ -69,36 +75,43 @@
             android:name=".InBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".InInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".InInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInfo5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/intereses"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".InJuego2Activity"
@@ -106,7 +119,6 @@
             android:label="@string/intereses"
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme">
-
             <!--XXX Permite ejecutar una actividad directamente con Run -->
             <intent-filter>
                 <action android:name="android.intent.action.CALL" />
@@ -118,51 +130,61 @@
             android:name=".PrBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".PrInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".PrInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo6Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo7Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInfo8Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/presupuesto"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".PrJuego3Activity"
@@ -170,7 +192,6 @@
             android:label="@string/presupuesto"
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme">
-
             <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
             <intent-filter>
                 <action android:name="android.intent.action.CALL" />
@@ -183,7 +204,6 @@
             android:label="@string/presupuesto"
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme">
-
             <!--XXX intent filter Permite ejecutar una actividad directamente con Run -->
             <intent-filter>
                 <action android:name="android.intent.action.CALL" />
@@ -195,41 +215,49 @@
             android:name=".SoBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".SoInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoInfo2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoInfo3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".SoInfo4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoInfo5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoInfo6Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoInstJuegoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/sobre_endeudamiento"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SoJuego5Activity"
@@ -248,46 +276,55 @@
             android:name=".SiBnActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiInfo1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiIngresoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiPlazoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiSimula1Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiSimula2Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiSimula3Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiSimula4Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".SiSimula5Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/simulador"
+            android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme"></activity>
         <activity
             android:name=".GifActivity"

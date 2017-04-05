@@ -36,6 +36,12 @@ public class SiIngresoActivity extends AppCompatActivity {
                 regresaInicio();
             }
         });
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SiIngresoActivity.this, SiInfo1Activity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

@@ -31,7 +31,12 @@ public class PrBnActivity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrBnActivity.this, MenuActivity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

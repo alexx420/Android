@@ -35,7 +35,12 @@ public class CrInfo2Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CrInfo2Activity.this, CrInfo1Activity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

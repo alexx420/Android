@@ -20,11 +20,11 @@
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_pleca_roja"
-        tools:ignore="ContentDescription"
-        android:layout_marginBottom="45dp"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        app:srcCompat="@drawable/img_pleca_roja"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -72,21 +72,21 @@
         android:id="@+id/imageView13"
         android:layout_width="100dp"
         android:layout_height="180dp"
+        android:layout_above="@+id/imageView22"
+        android:layout_toEndOf="@+id/imageView7"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nino"
-        tools:ignore="ContentDescription"
-        android:layout_above="@+id/imageView22"
-        android:layout_toEndOf="@+id/imageView7" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="550dp"
         android:layout_height="10dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_plecamini_verde"
-        android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_plecamini_verde"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -104,19 +104,19 @@
         android:id="@+id/imageView14"
         android:layout_width="550dp"
         android:layout_height="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView15"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_plecamini_roja"
-        android:layout_alignTop="@+id/imageView15"
-        android:layout_alignParentEnd="true"
         tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/img_si_titulo2"
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/img_si_titulo2"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -133,18 +133,18 @@
         android:id="@+id/imageView23"
         android:layout_width="220dp"
         android:layout_height="300dp"
-        app:srcCompat="@drawable/img_si_lista"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/radioGroup"
+        android:layout_alignBottom="@+id/radioGroup"
         android:layout_alignEnd="@+id/imageView17"
-        android:layout_alignBottom="@+id/radioGroup" />
+        android:layout_alignTop="@+id/radioGroup"
+        app:srcCompat="@drawable/img_si_lista"
+        tools:ignore="ContentDescription" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView17"
-        android:layout_toStartOf="@+id/imageView23"
-        android:id="@+id/radioGroup">
+        android:layout_toStartOf="@+id/imageView23">
 
         <RadioButton
             android:id="@+id/radioButton_5"
@@ -177,4 +177,14 @@
             android:layout_weight="1" />
     </RadioGroup>
 
+    <ImageButton
+        android:id="@+id/btn_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_siguiente"
+        android:background="@null"
+        android:contentDescription=""
+        android:src="@drawable/btn_atras"
+        tools:ignore="ContentDescription" />
 </RelativeLayout>

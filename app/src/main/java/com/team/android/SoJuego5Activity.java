@@ -40,6 +40,13 @@ public class SoJuego5Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
+
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SoJuego5Activity.this, SoInstJuegoActivity.class));
+            }
+        });
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {

@@ -34,7 +34,12 @@ public class CrInstJuegoActivity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CrInstJuegoActivity.this, CrInfo4Activity.class));
+            }
+        });
     }
 
     public void iniciaSiguiente() {

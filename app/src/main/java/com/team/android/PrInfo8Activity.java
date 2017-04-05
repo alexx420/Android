@@ -34,7 +34,12 @@ public class PrInfo8Activity extends AppCompatActivity {
                 regresaInicio();
             }
         });
-
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrInfo8Activity.this, PrInfo7Activity.class));
+            }
+        });
     }
 
     private void regresaInicio() {

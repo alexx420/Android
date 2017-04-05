@@ -29,6 +29,12 @@ public class CrJuego1Activity extends AppCompatActivity {
         findViewById(R.id.btn_home);
         findViewById(R.id.btn_dado).setOnClickListener(diceListener);
         findViewById(R.id.btn_home).setOnClickListener(homeListener);
+        findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CrJuego1Activity.this, CrInstJuegoActivity.class));
+            }
+        });
     }
 
     View.OnClickListener diceListener = new View.OnClickListener() {
