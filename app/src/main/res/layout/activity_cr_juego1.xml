@@ -30,12 +30,12 @@
         android:id="@+id/imageView7"
         android:layout_width="188dp"
         android:layout_height="131dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginEnd="34dp"
+        android:layout_toStartOf="@+id/imageViewC9"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_dialogo"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView4"
-        android:layout_toStartOf="@+id/imageViewC9"
-        android:layout_marginEnd="34dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -62,12 +62,12 @@
         android:id="@+id/imageView13"
         android:layout_width="83dp"
         android:layout_height="150dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/btn_anterior"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nino"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView7"
-        android:layout_toEndOf="@+id/btn_anterior"
-        android:layout_marginStart="27dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -338,17 +338,18 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_above="@+id/imageView18"
-        android:layout_alignEnd="@+id/imageView_dado"
         android:background="@null"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/btn_cr_dado"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView18"
+        android:layout_alignEnd="@+id/spinning_dice_image"
+        android:layout_marginEnd="45dp" />
 
     <ImageView
-        android:id="@+id/imageView_dado"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:id="@+id/spinning_dice_image"
+        android:layout_width="210dp"
+        android:layout_height="140dp"
         android:layout_above="@+id/btn_dado"
         android:layout_marginBottom="44dp"
         android:layout_toStartOf="@+id/imageView16"
@@ -359,12 +360,12 @@
         android:id="@+id/imageView18"
         android:layout_width="310dp"
         android:layout_height="75dp"
-        android:layout_above="@+id/imageView16"
-        android:layout_alignStart="@+id/imageView4"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="28dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_dado"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView16"
+        android:layout_toEndOf="@+id/imageViewC22" />
 
     <ImageButton
         android:id="@+id/btn_anterior"

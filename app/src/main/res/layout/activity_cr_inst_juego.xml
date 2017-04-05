@@ -33,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/img_cr_dialogo_6"
+        app:srcCompat="@drawable/img_cr_dialogo_7"
         tools:ignore="ContentDescription" />
 
     <ImageButton
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_cr_credito"
+        app:srcCompat="@drawable/img_cr_credito2"
         tools:ignore="ContentDescription" />
 
     <ImageButton

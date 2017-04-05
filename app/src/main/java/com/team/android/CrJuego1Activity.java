@@ -2,11 +2,11 @@ package com.team.android;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -67,28 +67,37 @@ public class CrJuego1Activity extends AppCompatActivity {
             mensajeGanador();
         } else {
             valorDado = (int) Math.floor(Math.random() * 6 + 1);
-            ImageView imgv_dado = (ImageView) findViewById(R.id.imageView_dado);
+            ImageView imgv_dado = (ImageView) findViewById(R.id.spinning_dice_image);
             switch (valorDado) {
                 case 1:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado1);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f1);
                     break;
                 case 2:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado2);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f2);
                     break;
                 case 3:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado3);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f3);
                     break;
                 case 4:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado4);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f4);
                     break;
                 case 5:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado5);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f5);
                     break;
                 case 6:
-                    imgv_dado.setImageResource(R.drawable.img_cr_dado6);
+                    imgv_dado.setBackgroundResource(R.drawable.spin_animation_f6);
                     break;
             }
-            muestraPregunta();
+            CustomAnimationDrawable frameAnimation = new CustomAnimationDrawable(
+                    (AnimationDrawable) imgv_dado.getBackground()) {
+                @Override
+                void onAnimationFinish() {
+                    muestraPregunta();
+                }
+            };
+            imgv_dado.setBackgroundDrawable(frameAnimation);
+            frameAnimation.setOneShot(true);
+            frameAnimation.start();
         }
     }
 
@@ -157,7 +166,6 @@ public class CrJuego1Activity extends AppCompatActivity {
                     }
                 });
         builder.show();
-
     }
 
     private Pregunta obtenerPreguntaRandom() {
