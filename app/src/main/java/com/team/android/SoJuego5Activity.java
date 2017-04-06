@@ -63,17 +63,18 @@ public class SoJuego5Activity extends AppCompatActivity {
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
                 case R.id.imageButton_f3:
-                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_f4:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
                 case R.id.imageButton_f5:
-                    button.setImageResource(R.drawable.btn_so_j5_falso);
-                    button.setTag("success");
+                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
                     break;
                 case R.id.imageButton_f6:
-                    button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    button.setImageResource(R.drawable.btn_so_j5_falso);
+                    button.setTag("success");
                     break;
                 case R.id.imageButton_f7:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
@@ -86,19 +87,18 @@ public class SoJuego5Activity extends AppCompatActivity {
                     button.setTag("success");
                     break;
                 case R.id.imageButton_v3:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero);
-                    button.setTag("success");
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
                     break;
                 case R.id.imageButton_v4:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
                     break;
                 case R.id.imageButton_v5:
-                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
-                    break;
-                case R.id.imageButton_v6:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
+                    break;
+                case R.id.imageButton_v6:
+                    button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
                     break;
                 case R.id.imageButton_v7:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
