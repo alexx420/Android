@@ -28,13 +28,13 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="621dp"
-        android:layout_height="152dp"
-        android:layout_below="@+id/imageView17"
-        android:layout_centerHorizontal="true"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_in_juguemos"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageView12"
+        android:layout_toStartOf="@+id/imageView17" />
 
     <ImageButton
         android:id="@+id/btn_siguiente"
@@ -75,8 +75,9 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nina"
         tools:ignore="ContentDescription"
-        android:layout_above="@+id/btn_home"
-        android:layout_toEndOf="@+id/btn_anterior" />
+        android:layout_below="@+id/imageView17"
+        android:layout_toEndOf="@+id/btn_anterior"
+        android:layout_marginStart="55dp" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -129,4 +130,12 @@
         android:contentDescription=""
         android:src="@drawable/btn_atras"
         tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_so_dialogo8"
+        android:layout_below="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7" />
 </RelativeLayout>

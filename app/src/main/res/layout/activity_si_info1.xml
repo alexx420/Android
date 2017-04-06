@@ -72,12 +72,11 @@
         android:id="@+id/imageView13"
         android:layout_width="167dp"
         android:layout_height="300dp"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_marginEnd="59dp"
-        android:layout_toStartOf="@+id/imageView7"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nina"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageView22"
+        android:layout_alignStart="@+id/imageView17" />
 
     <ImageView
         android:id="@+id/imageView15"

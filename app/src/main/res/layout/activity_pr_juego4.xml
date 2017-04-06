@@ -190,7 +190,8 @@
         app:srcCompat="@drawable/img_pr_j4_casilla1"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageView12"
-        android:layout_toStartOf="@+id/imageView_c2" />
+        android:layout_toStartOf="@+id/imageView_c2"
+        android:layout_alignBottom="@+id/imageView_p1" />
 
     <ImageView
         android:id="@+id/imageView19"

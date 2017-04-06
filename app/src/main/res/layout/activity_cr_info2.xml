@@ -29,12 +29,12 @@
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="528dp"
-        android:layout_height="231dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_height="250dp"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_cr_dialogo_3"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/imageView13"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/btn_siguiente"

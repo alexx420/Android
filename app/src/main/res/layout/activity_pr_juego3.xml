@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/img_nino"
         tools:ignore="ContentDescription"
         android:layout_below="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView6" />
+        android:layout_toEndOf="@+id/btn_home" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -107,16 +107,16 @@
         app:srcCompat="@drawable/img_pr_jdialogo1"
         tools:ignore="ContentDescription"
         android:layout_above="@+id/imageButton_o1"
-        android:layout_alignEnd="@+id/btn_home" />
+        android:layout_toEndOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="180dp"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_toStartOf="@+id/imageView16"
         app:srcCompat="@drawable/img_pr_jdialogo2"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageButton_o9" />
 
     <ImageButton
         android:id="@+id/imageButton_o6"
@@ -182,14 +182,14 @@
         android:id="@+id/imageButton_o9"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_above="@+id/imageButton_o12"
-        android:layout_alignEnd="@+id/imageView9"
         android:layout_marginEnd="27dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:tag="img_pr_casilla9_uf"
         app:srcCompat="@drawable/img_pr_casilla9_uf"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/imageButton_o8"
+        android:layout_toStartOf="@+id/imageView16" />
 
     <ImageButton
         android:id="@+id/imageButton_o8"
@@ -207,13 +207,13 @@
         android:id="@+id/imageButton_o7"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_above="@+id/imageButton_o10"
-        android:layout_toStartOf="@+id/imageButton_o11"
         android:background="@null"
         android:scaleType="fitXY"
         android:tag="img_pr_casilla7_uf"
         app:srcCompat="@drawable/img_pr_casilla7_uf"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/imageButton_o10"
+        android:layout_toStartOf="@+id/imageButton_o8" />
 
     <ImageButton
         android:id="@+id/imageButton_o1"
@@ -230,39 +230,39 @@
 
     <ImageButton
         android:id="@+id/imageButton_o12"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignStart="@+id/imageButton_o9"
-        android:layout_below="@+id/imageButton_o8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:tag="img_pr_casilla12_uf"
         app:srcCompat="@drawable/img_pr_casilla12_uf"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/imageButton_o11"
+        android:layout_toEndOf="@+id/imageButton_o8" />
 
     <ImageButton
         android:id="@+id/imageButton_o11"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignStart="@+id/imageButton_o8"
-        android:layout_alignTop="@+id/imageButton_o12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@null"
         android:scaleType="fitXY"
         android:tag="img_pr_casilla11_uf"
         app:srcCompat="@drawable/img_pr_casilla11_uf"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_alignBottom="@+id/imageButton_o10"
+        android:layout_toEndOf="@+id/imageButton_o7" />
 
     <ImageButton
         android:id="@+id/imageButton_o10"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_alignStart="@+id/imageButton_o7"
-        android:layout_below="@+id/imageButton_o3"
         android:background="@null"
         android:scaleType="fitXY"
         android:tag="img_pr_casilla10_uf"
         app:srcCompat="@drawable/img_pr_casilla10_uf"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/imageButton_o3"
+        android:layout_alignStart="@+id/imageButton_o7" />
 
     <ImageButton
         android:id="@+id/btn_siguiente"

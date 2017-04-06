@@ -41,7 +41,7 @@ public class SoInfo4Activity extends AppCompatActivity {
     }
 
     public void iniciaSiguiente() {
-        Intent myIntent = new Intent(this, SoInfo5Activity.class);
+        Intent myIntent = new Intent(this, SoInstJuegoActivity.class);
         startActivity(myIntent);
     }
 

@@ -34,7 +34,7 @@ public class SoInstJuegoActivity extends AppCompatActivity {
         findViewById(R.id.btn_anterior).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SoInstJuegoActivity.this, SoInfo6Activity.class));
+                startActivity(new Intent(SoInstJuegoActivity.this, SoInfo4Activity.class));
             }
         });
     }
