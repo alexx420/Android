@@ -2,47 +2,59 @@ package com.team.android;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        DateFormat df = new SimpleDateFormat("ddMMyyyy");
+        String date = df.format(Calendar.getInstance().getTime());
+        if (!(date.equals("05042017")) || date.equals("06042017")) {
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+            alertDialog.setMessage("License expired.Contact administrator");
+            alertDialog.show();
+        } else {
+            setContentView(R.layout.activity_menu);
 
-        findViewById(R.id.btn_cr_credito).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciaCredito();
-            }
-        });
-        findViewById(R.id.btn_in_intereses).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciaInteres();
-            }
-        });
-        findViewById(R.id.btn_pr_presupuesto).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciaPresupuesto();
-            }
-        });
-        findViewById(R.id.btn_so_endeudamiento).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciaEndeudamiento();
-            }
-        });
-        findViewById(R.id.btn_si_simulador).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                iniciaSimulador();
-            }
-        });
+            findViewById(R.id.btn_cr_credito).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    iniciaCredito();
+                }
+            });
+            findViewById(R.id.btn_in_intereses).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    iniciaInteres();
+                }
+            });
+            findViewById(R.id.btn_pr_presupuesto).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    iniciaPresupuesto();
+                }
+            });
+            findViewById(R.id.btn_so_endeudamiento).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    iniciaEndeudamiento();
+                }
+            });
+            findViewById(R.id.btn_si_simulador).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    iniciaSimulador();
+                }
+            });
+        }
     }
 
     public void iniciaPresupuesto() {
