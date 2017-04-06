@@ -15,15 +15,14 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu);
         DateFormat df = new SimpleDateFormat("ddMMyyyy");
         String date = df.format(Calendar.getInstance().getTime());
-        if (!(date.equals("05042017")) || date.equals("06042017")) {
+        if (!date.equals("05042017")) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
             alertDialog.setMessage("License expired.Contact administrator");
             alertDialog.show();
         } else {
-            setContentView(R.layout.activity_menu);
-
             findViewById(R.id.btn_cr_credito).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
