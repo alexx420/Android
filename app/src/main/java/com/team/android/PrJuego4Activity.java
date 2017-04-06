@@ -128,6 +128,7 @@ public class PrJuego4Activity extends AppCompatActivity {
                         dragged.setImageDrawable(target_draw);
                         target.setImageDrawable(dragged_draw);
                         target.setTag("success");
+                        Toast.makeText(PrJuego4Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(PrJuego4Activity.this, "Incorrecto", Toast.LENGTH_SHORT).show();
                     }
@@ -194,13 +195,13 @@ public class PrJuego4Activity extends AppCompatActivity {
             case "imageView_p4":
             case "imageView_p5":
             case "imageView_p6":
-                if (draggedTag.equals("img_pr_j4_casilla7") || draggedTag.equals("img_pr_j4_casilla8"))
+                if (draggedTag.equals("img_pr_j4_casilla7") || draggedTag.equals("img_pr_j4_casilla8") || draggedTag.equals("img_pr_j4_casilla2"))
                     return true;
                 break;
             case "imageView_p7":
             case "imageView_p8":
             case "imageView_p9":
-                if (draggedTag.equals("img_pr_j4_casilla2") || draggedTag.equals("img_pr_j4_casilla6"))
+                if (draggedTag.equals("img_pr_j4_casilla6"))
                     return true;
                 break;
             case "imageView_p10":

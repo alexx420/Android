@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by alexx420 on 21/03/2017.
@@ -18,6 +21,7 @@ import java.lang.reflect.Field;
 public class CrJuego1Activity extends AppCompatActivity {
     private int meta = 22;
     private int pos = 0;
+    private int count = 0;
     private boolean ganador = false;
     private int valorDado;
 
@@ -143,7 +147,7 @@ public class CrJuego1Activity extends AppCompatActivity {
     }
 
     private void muestraPregunta() {
-        final Pregunta preguntaRandom = obtenerPreguntaRandom();
+        final Pregunta preguntaRandom = obtenerPregunta();
         AlertDialog.Builder builder = new AlertDialog.Builder(CrJuego1Activity.this);
         builder.setTitle("Pregunta");
         builder.setCancelable(false);
@@ -168,10 +172,12 @@ public class CrJuego1Activity extends AppCompatActivity {
         builder.show();
     }
 
-    private Pregunta obtenerPreguntaRandom() {
-        Pregunta pregunta;
-        int numeroRandom = (int) Math.floor(Math.random() * Pregunta.values().length + 1);
-        pregunta = Pregunta.valueOf("P_" + numeroRandom);
+    private Pregunta obtenerPregunta() {
+        if (count >= Pregunta.values().length)
+            count = 0;
+        List preguntas = Arrays.asList(Pregunta.values());
+        Pregunta pregunta = (Pregunta) preguntas.get(count);
+        count++;
         return pregunta;
     }
 }

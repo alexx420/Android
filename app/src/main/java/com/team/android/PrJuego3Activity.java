@@ -73,6 +73,7 @@ public class PrJuego3Activity extends AppCompatActivity {
                 case R.id.imageButton_o2:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla2_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o3:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla3_err);
@@ -85,10 +86,12 @@ public class PrJuego3Activity extends AppCompatActivity {
                 case R.id.imageButton_o5:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla5_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o6:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla6_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o7:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla7_err);
@@ -97,6 +100,7 @@ public class PrJuego3Activity extends AppCompatActivity {
                 case R.id.imageButton_o8:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla8_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o9:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla9_err);
@@ -109,10 +113,12 @@ public class PrJuego3Activity extends AppCompatActivity {
                 case R.id.imageButton_o11:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla11_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_o12:
                     button.setImageResource(R.drawable.btn_pr_j3_casilla12_ok);
                     button.setTag("success");
+                    Toast.makeText(PrJuego3Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
             }
             if (validaVictoria())

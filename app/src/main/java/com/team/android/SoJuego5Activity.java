@@ -6,6 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -58,51 +59,65 @@ public class SoJuego5Activity extends AppCompatActivity {
                 case R.id.imageButton_f1:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f2:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f3:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f4:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f5:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f6:
                     button.setImageResource(R.drawable.btn_so_j5_falso);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_f7:
                     button.setImageResource(R.drawable.btn_so_j5_falso_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v1:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v2:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v3:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v4:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v5:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v6:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero_err);
+                    Toast.makeText(SoJuego5Activity.this, "Incorrecto!", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageButton_v7:
                     button.setImageResource(R.drawable.btn_so_j5_verdadero);
                     button.setTag("success");
+                    Toast.makeText(SoJuego5Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     break;
             }
             if (validaVictoria())

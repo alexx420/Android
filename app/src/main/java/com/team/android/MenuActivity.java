@@ -18,9 +18,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         DateFormat df = new SimpleDateFormat("ddMMyyyy");
         String date = df.format(Calendar.getInstance().getTime());
-        if (!date.equals("05042017")) {
+        if (!(date.equals("06042017") || date.equals("07042017"))) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-            alertDialog.setMessage("License expired.Contact administrator");
+            alertDialog.setMessage("License expired.Please contact administrator");
             alertDialog.show();
         } else {
             findViewById(R.id.btn_cr_credito).setOnClickListener(new View.OnClickListener() {

@@ -115,6 +115,7 @@ public class InJuego2Activity extends AppCompatActivity {
                     if (validaRespuesta(dragged, target)) {
                         target.setImageDrawable(dragged_draw);
                         target.setTag("success");
+                        Toast.makeText(InJuego2Activity.this, "Correcto!", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(InJuego2Activity.this, "Incorrecto, revisa tu respuesta", Toast.LENGTH_SHORT).show();
                     }
