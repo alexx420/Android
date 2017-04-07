@@ -75,9 +75,10 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_nina"
         tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView17"
-        android:layout_toEndOf="@+id/btn_anterior"
-        android:layout_marginStart="55dp" />
+        android:layout_alignTop="@+id/btn_anterior"
+        android:layout_toStartOf="@+id/imageView25"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="28dp" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -111,15 +112,6 @@
         app:srcCompat="@drawable/img_plecamini_roja"
         tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_in_titulo2"
-        tools:ignore="ContentDescription" />
-
     <ImageButton
         android:id="@+id/btn_anterior"
         android:layout_width="wrap_content"
@@ -136,6 +128,6 @@
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/img_so_dialogo8"
-        android:layout_below="@+id/imageView7"
+        android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/imageView7" />
 </RelativeLayout>

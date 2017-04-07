@@ -12,7 +12,7 @@ public enum Pregunta {
     P_5("Sólo podemos usar el crédito para comprar productos con precios elevados", false),
     P_6("¿Podemos usar un crédito para viajar?", true),
     P_7("El crédito nunca se puede usar a nuestro favor", false),
-    P_8("Podemos usar el crédito paracomprar la casa de nuestros sueños", true),
+    P_8("Podemos usar el crédito para comprar la casa de nuestros sueños", true),
     P_9("El crédito bien utilizado se puede usar a nuestro favor", true),
     P_10("Podemos usar el crédito para comprar calzado", true),
     P_11("Podemos usar el crédito para comprar ropa", true),
