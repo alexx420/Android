@@ -18,7 +18,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         DateFormat df = new SimpleDateFormat("ddMMyyyy");
         String date = df.format(Calendar.getInstance().getTime());
-        if (!(date.equals("06042017") || date.equals("07042017"))) {
+        if (!(date.equals("07042017") || date.equals("08042017") || date.equals("09042017") || date.equals("10042017")|| date.equals("11042017"))) {
             AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
             alertDialog.setMessage("License expired.Please contact administrator");
             alertDialog.show();

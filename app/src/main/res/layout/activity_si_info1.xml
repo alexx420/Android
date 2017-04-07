@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_si_titulo2"
+        app:srcCompat="@drawable/img_si_titulo"
         tools:ignore="ContentDescription" />
 
     <ImageView

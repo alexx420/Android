@@ -30,11 +30,11 @@
         android:id="@+id/imageView7"
         android:layout_width="240dp"
         android:layout_height="130dp"
+        android:layout_alignTop="@+id/btn_anterior"
+        android:layout_toEndOf="@+id/btn_anterior"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/img_si_dialogo4"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/btn_anterior"
-        android:layout_toEndOf="@+id/btn_anterior" />
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/btn_siguiente"
@@ -116,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView4"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/img_si_titulo2"
+        app:srcCompat="@drawable/img_si_titulo"
         tools:ignore="ContentDescription" />
 
     <ImageView
@@ -133,29 +133,29 @@
         android:id="@+id/imageView23"
         android:layout_width="220dp"
         android:layout_height="300dp"
-        app:srcCompat="@drawable/img_si_lista2"
-        tools:ignore="ContentDescription"
-        android:layout_below="@+id/imageView17"
+        android:layout_alignBottom="@+id/radioGroup2"
         android:layout_alignEnd="@+id/imageView17"
-        android:layout_alignBottom="@+id/radioGroup2" />
+        android:layout_below="@+id/imageView17"
+        app:srcCompat="@drawable/img_si_lista2"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/btn_anterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_siguiente"
         android:background="@null"
         android:contentDescription=""
         android:src="@drawable/btn_atras"
-        tools:ignore="ContentDescription"
-        android:layout_alignTop="@+id/btn_siguiente"
-        android:layout_alignParentStart="true" />
+        tools:ignore="ContentDescription" />
 
     <RadioGroup
+        android:id="@+id/radioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView17"
-        android:layout_toStartOf="@+id/imageView23"
-        android:id="@+id/radioGroup2">
+        android:layout_toStartOf="@+id/imageView23">
 
         <RadioButton
             android:id="@+id/radioButton_1"
@@ -194,4 +194,13 @@
             android:layout_weight="1" />
     </RadioGroup>
 
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView23"
+        android:layout_toStartOf="@+id/imageView16"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/img_si_reglas2"
+        tools:ignore="ContentDescription" />
 </RelativeLayout>
